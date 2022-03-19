@@ -17,10 +17,34 @@ header::after {
   position: relative;
   z-index: 3;
 }
-header hr {
-  background-color: #878787;
-  height: 1px;
+
+.header-fixed {
+  transition: all 0.5s ease;
+  position: fixed;
   width: 100%;
+  padding: 30px 0;
+  border-bottom: 1px solid #878787;
+}
+.inverted {
+  background-color: var(--white);
+  box-shadow: 0 3px 5px 0.3px rgba(0, 0, 0, 0.1);
+  padding: 15px 0;
+  border-bottom: none;
+}
+.inverted .header-top__menu a {
+  color: var(--body-text);
+}
+.inverted .header-top__menu a:hover {
+  border-bottom: solid 1px var(--body-text);
+}
+.inverted .header-top__tel a {
+  color: var(--body-text);
+}
+.inverted .header-top__tel a svg {
+  stroke: var(--body-text);
+}
+.inverted .header-top__tel a svg:hover {
+  fill: var(--body-text);
 }
 .header-top {
   display: flex;
@@ -29,7 +53,6 @@ header hr {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  padding: 30px 0;
 }
 .header-top__logo {
 }
@@ -57,11 +80,12 @@ header hr {
   display: flex;
   align-items: center;
 }
-.header-top__tel a div {
+.header-top__tel a svg {
   margin-right: 10px;
+  stroke: var(--white);
 }
-.header-top__tel a div:last-child {
-  margin-right: 0;
+.header-top__tel a svg:hover {
+  fill: var(--white);
 }
 .header-bottom {
   max-width: 1200px;

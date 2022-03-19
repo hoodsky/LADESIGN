@@ -14,6 +14,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
 </head>
 
 <script>
@@ -48,13 +49,72 @@
 </script>
 
 <body>
-    <header w3-include-html="header.html"></header>
-    <main>
 
+    <!-- шапка -->
+    <header w3-include-html="header.html"></header>
+    <!-- шапка конец -->
+
+    <main>
+        <div class="about-us">
+            <div class="content">
+                <div class="about-us__tittle">
+                    <h2>Наша команда дает уверенность</h2>
+                </div>
+                <div>
+                    <div>
+                        <h6>Дизайн-проект от студии LA Design не только совершенен по дизайну, но и реализуем</h6>
+                        <details>
+                            <summary>
+                                <h4>Каждый проект уникален</h4>
+                            </summary>
+                        </details>
+                        <details>
+                            <summary>
+                                <h4>Полное сопровождение
+                                </h4>
+                            </summary>
+                        </details>
+                        <details>
+                            <summary>
+                                <h4>Согласование перепланировки</h4>
+                            </summary>
+                        </details>
+                        <details>
+                            <summary>
+                                <h4>Техническая документация</h4>
+                            </summary>
+                        </details>
+                        <details>
+                            <summary>
+                                <h4>Строгая политика конфиденциальности
+                                </h4>
+                            </summary>
+                        </details>
+                    </div>
+
+
+                    <div></div>
+                </div>
+            </div>
+        </div>
     </main>
 
-    <footer w3-include-html="footer.html"></footer>
 
+    <!-- кнопка для возврата на верх страницы -->
+
+    <button onclick="window.location.href='#top'" class="back-button">
+        <div class="top-icon">
+        </div>
+    </button>
+
+
+
+    <!-- кнопка для возврата на верх страницы конец -->
+
+
+    <!-- подвал -->
+    <footer w3-include-html="footer.html"></footer>
+    <!-- подвал конец -->
 
     <script src="./js/script.js"></script>
     <script>

@@ -1,0 +1,28 @@
+footer {
+  background-color: var(--footer);
+  padding: 95px 0;
+  width: 100%;
+}
+.footer-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.footer-links a {
+  margin-right: 30px;
+  text-decoration: none;
+  color: var(--main-color);
+}
+.footer-links a:hover {
+  border-bottom: solid 1px var(--button);
+  color: var(--button);
+}
+.footer-links a:last-child {
+  margin-right: 0;
+}
+.footer-c {
+  display: flex;
+  justify-content: center;
+  color: var(--main-color);
+}

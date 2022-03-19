@@ -8,10 +8,19 @@
   --button: #393246;
   --white: #ffffff;
 }
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
 body {
   font-family: 'Roboto', sans-serif;
   font-family: 'Roboto Condensed', sans-serif;
   background-color: var(--white);
+  /* прижатие подвала к низу при путой странице */
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100%;
+  /* конец прижатия */
 }
 h1 {
   font-family: 'Roboto Condensed';
@@ -138,4 +147,54 @@ p .number {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* кнопка для возврата на начало страницы */
+
+.top-icon {
+  border-top: 1px solid var(--button);
+  border-left: 1px solid var(--button);
+  transform: rotate(45deg) translateX(3px) translateY(3px);
+  width: 12px;
+  height: 12px;
+}
+.back-button {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: -40px;
+  right: 40px;
+  width: 30px;
+  height: 30px;
+  background-color: var(--white);
+  border: 1px solid #d5d5d5;
+  box-sizing: border-box;
+  backdrop-filter: blur(5px);
+  transition: all 0.5s ease;
+}
+.back-button-hide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  width: 30px;
+  height: 30px;
+  background-color: var(--white);
+  border: none;
+  border: 1px solid #d5d5d5;
+  box-sizing: border-box;
+  backdrop-filter: blur(5px);
+  transition: all 0.5s ease;
+}
+/* кнопка для возврата на начало страницы конец*/
+
+/* наша команда  */
+.about-us {
+}
+.about-us__tittle {
+  color: var(--body-text);
 }
