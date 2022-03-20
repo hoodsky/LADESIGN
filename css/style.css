@@ -209,6 +209,7 @@ details summary {
 }
 .about-us__list {
   margin-right: 100px;
+  width: 42%;
 }
 .about-us__list summary svg {
   transform: rotate(45deg);
@@ -255,4 +256,95 @@ details summary {
 }
 .about-us__list h6 {
   margin-bottom: 50px;
+}
+.about-us__photo {
+  background: url('/img/01.png') no-repeat center;
+  width: 50%;
+  height: 500px;
+}
+
+/* портфолио */
+sup {
+  vertical-align: super;
+  font-size: smaller;
+}
+
+/* портфолио гелерея */
+.portfolio__gallery {
+  display: grid;
+  gap: 30px;
+  grid-template-rows: repeat(7, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+}
+.gallery-div {
+  background-color: var(--footer);
+  border: var(--button) solid 1px;
+  position: relative;
+}
+.gallery-div::before {
+  display: block;
+  content: '';
+  width: 100%;
+}
+.gallery-div > div {
+  position: absolute; /* абсолютное положение элемент */
+  /* положение элемента */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.div01 {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.div02 {
+  padding-top: 100%;
+}
+.div03 {
+}
+.div04 {
+}
+.div05 {
+}
+.div06 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+.div07 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.div08 {
+}
+.div09 {
+}
+.div10 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+.div11 {
+  grid-row-start: 5;
+  grid-row-end: 7;
+}
+.div12 {
+}
+.div13 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 6;
+  grid-row-end: 8;
+}
+.div14 {
+}
+.div15 {
+}
+.div16 {
+}
+.div17 {
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
