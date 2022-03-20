@@ -193,8 +193,66 @@ p .number {
 /* кнопка для возврата на начало страницы конец*/
 
 /* наша команда  */
+details summary {
+  list-style: none;
+}
+
 .about-us {
+  margin-top: 150px;
+  color: var(--body-text);
 }
 .about-us__tittle {
-  color: var(--body-text);
+  margin-bottom: 50px;
+}
+.about-us__content {
+  display: flex;
+}
+.about-us__list {
+  margin-right: 100px;
+}
+.about-us__list summary svg {
+  transform: rotate(45deg);
+  stroke: var(--body-text);
+  transition: all 0.3s ease-out;
+}
+.about-us__list summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  border-top: 1px solid var(--light-bg);
+  /* margin-bottom: -1px; */
+  cursor: pointer;
+}
+.about-us__list summary:last-child {
+  border-bottom: 1px solid var(--light-bg);
+}
+.about-us__list summary:hover {
+  color: var(--button);
+}
+.about-us__list summary:hover > svg {
+  stroke: var(--button);
+}
+.about-us__list details[open] > summary {
+  border-bottom: none;
+}
+.about-us__list details[open] > summary svg {
+  transform: rotate(-45deg);
+  transition: all 0.3s ease-out;
+}
+.about-us__list details {
+  padding-bottom: 0;
+  height: 80px;
+  transition: all 0.3s ease-out;
+}
+.about-us__list details[open] {
+  padding-bottom: 25px;
+  height: 200px;
+  transition: all 0.3s ease-out;
+}
+.about-us__list details[open]:last-child {
+  border-bottom: 1px solid var(--light-bg);
+}
+.about-us__list h6 {
+  margin-bottom: 50px;
 }

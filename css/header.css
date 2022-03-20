@@ -25,11 +25,25 @@ header::after {
   padding: 30px 0;
   border-bottom: 1px solid #878787;
 }
+
+.header-logo_white {
+  display: block;
+}
+.logo-hide {
+  display: none;
+}
+.header-logo_dark {
+  display: none;
+}
+
+.logo-show {
+  display: block;
+}
 .inverted {
   background-color: var(--white);
-  box-shadow: 0 3px 5px 0.3px rgba(0, 0, 0, 0.1);
-  padding: 15px 0;
-  border-bottom: none;
+  /* box-shadow: 0 3px 5px 0.3px rgba(0, 0, 0, 0.1); */
+  padding: 20px 0;
+  border-bottom: 1px solid var(--light-bg);
 }
 .inverted .header-top__menu a {
   color: var(--body-text);
@@ -43,7 +57,7 @@ header::after {
 .inverted .header-top__tel a svg {
   stroke: var(--body-text);
 }
-.inverted .header-top__tel a svg:hover {
+.inverted .header-top__tel a:hover svg {
   fill: var(--body-text);
 }
 .header-top {
@@ -83,8 +97,11 @@ header::after {
 .header-top__tel a svg {
   margin-right: 10px;
   stroke: var(--white);
+  width: 23px;
+  height: 23px;
+  fill: none;
 }
-.header-top__tel a svg:hover {
+.header-top__tel a:hover > svg {
   fill: var(--white);
 }
 .header-bottom {
