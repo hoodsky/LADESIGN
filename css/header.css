@@ -81,6 +81,7 @@ header::after {
 }
 .header-top__menu a:hover {
   border-bottom: solid 1px var(--white);
+  margin-bottom: -1px;
 }
 .header-top__menu a:last-child {
   margin-right: 0;

@@ -264,22 +264,56 @@ details summary {
 }
 
 /* портфолио */
+.portfolio {
+  color: var(--body-text);
+}
 sup {
   vertical-align: super;
   font-size: smaller;
 }
-
+.portfolio__tittle {
+  margin: 110px 0 50px 0;
+  display: flex;
+  justify-content: center;
+}
+.portfolio__div {
+  display: flex;
+  justify-content: center;
+}
+.portfolio__nav {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid var(--body-text);
+}
+.portfolio__nav a {
+  margin-right: 50px;
+  text-decoration: none;
+  color: var(--body-text);
+}
+.portfolio__nav a:hover {
+  margin-bottom: -1px;
+  color: var(--button);
+  border-bottom: 1px solid var(--button);
+}
+.portfolio__nav a:last-child {
+  margin-right: 0;
+}
 /* портфолио гелерея */
 .portfolio__gallery {
+  margin: 40px 0;
   display: grid;
   gap: 30px;
   grid-template-rows: repeat(7, 1fr);
   grid-template-columns: repeat(4, 1fr);
 }
+
 .gallery-div {
   background-color: var(--footer);
-  border: var(--button) solid 1px;
   position: relative;
+  text-decoration: none;
+  color: var(--white);
+  justify-content: center;
+  text-align: center;
 }
 .gallery-div::before {
   display: block;
@@ -287,64 +321,110 @@ sup {
   width: 100%;
 }
 .gallery-div > div {
-  position: absolute; /* абсолютное положение элемент */
-  /* положение элемента */
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  background-attachment: fixed;
+  background-color: var(--bg);
+}
+.gallery-div:hover > div {
+  display: flex;
 }
 .div01 {
+  background: url('/img/portfolio/links/01.png') no-repeat center;
+  background-size: cover;
   grid-row-start: 1;
   grid-row-end: 3;
 }
 
 .div02 {
+  background: url('/img/portfolio/links/02.png') no-repeat center;
+  background-size: cover;
   padding-top: 100%;
 }
 .div03 {
+  background: url('/img/portfolio/links/03.png') no-repeat center;
+  background-size: cover;
 }
 .div04 {
+  background: url('/img/portfolio/links/04.png') no-repeat center;
+  background-size: cover;
 }
 .div05 {
+  background: url('/img/portfolio/links/05.png') no-repeat center;
+  background-size: cover;
 }
 .div06 {
+  background: url('/img/portfolio/links/06.png') no-repeat center;
+  background-size: cover;
   grid-column-start: 3;
   grid-column-end: 5;
   grid-row-start: 2;
   grid-row-end: 4;
 }
 .div07 {
+  background: url('/img/portfolio/links/07.png') no-repeat center;
+  background-size: cover;
   grid-column-start: 1;
   grid-column-end: 3;
 }
 .div08 {
+  background: url('/img/portfolio/links/08.png') no-repeat center;
+  background-size: cover;
 }
 .div09 {
+  background: url('/img/portfolio/links/09.png') no-repeat center;
+  background-size: cover;
 }
 .div10 {
+  background: url('/img/portfolio/links/10.png') no-repeat center;
+  background-size: cover;
   grid-column-start: 3;
   grid-column-end: 5;
 }
 .div11 {
+  background: url('/img/portfolio/links/11.png') no-repeat center;
+  background-size: cover;
   grid-row-start: 5;
   grid-row-end: 7;
 }
 .div12 {
+  background: url('/img/portfolio/links/12.png') no-repeat center;
+  background-size: cover;
 }
 .div13 {
+  background: url('/img/portfolio/links/13.png') no-repeat center;
+  background-size: cover;
   grid-column-start: 3;
   grid-column-end: 5;
   grid-row-start: 6;
   grid-row-end: 8;
 }
 .div14 {
+  background: url('/img/portfolio/links/14.png') no-repeat center;
+  background-size: cover;
 }
 .div15 {
+  background: url('/img/portfolio/links/15.png') no-repeat center;
+  background-size: cover;
 }
 .div16 {
+  background: url('/img/portfolio/links/16.png') no-repeat center;
+  background-size: cover;
 }
 .div17 {
+  background: url('/img/portfolio/links/17.png') no-repeat center;
+  background-size: cover;
   grid-column-start: 1;
   grid-column-end: 3;
+}
+.gallery-morebtn {
+  padding: 22px 54px;
+  border: 1px solid var(--button);
+  box-sizing: border-box;
 }

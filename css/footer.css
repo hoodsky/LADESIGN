@@ -17,6 +17,7 @@ footer {
 .footer-links a:hover {
   border-bottom: solid 1px var(--button);
   color: var(--button);
+  margin-bottom: -1px;
 }
 .footer-links a:last-child {
   margin-right: 0;
