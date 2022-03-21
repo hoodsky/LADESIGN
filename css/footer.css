@@ -12,7 +12,6 @@ footer {
 .footer-links a {
   margin-right: 30px;
   text-decoration: none;
-
   color: var(--main-color);
 }
 .footer-links a:hover {

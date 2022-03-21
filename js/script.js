@@ -35,4 +35,23 @@ window.onscroll = function() {
                 });
             });
         });
+        
+// проверка ввода текста для активации кнопки на модальном окне
+function checkParams() {
+    var fio = $('#name').val();
+    var email = $('#phone').val();
+    
+    if(fio.length != 0 && email.length != 0) {
+        $('#submit').removeAttr('disabled');
+    } else {
+        $('#submit').attr('disabled', 'disabled');
+    }
+}
 
+  window.onload = function () {
+    document.body.classList.add('loaded_hiding');
+    window.setTimeout(function () {
+      document.body.classList.add('loaded');
+      document.body.classList.remove('loaded_hiding');
+    }, 500);
+  }
