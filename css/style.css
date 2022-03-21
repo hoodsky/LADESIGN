@@ -298,6 +298,7 @@ sup {
 .portfolio__nav a:last-child {
   margin-right: 0;
 }
+
 /* портфолио гелерея */
 .portfolio__gallery {
   margin: 40px 0;
@@ -321,19 +322,25 @@ sup {
   width: 100%;
 }
 .gallery-div > div {
+  opacity: 0;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   background-attachment: fixed;
   background-color: var(--bg);
+  transition: all 0.5s ease;
 }
 .gallery-div:hover > div {
-  display: flex;
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+.gallery-div h4 {
+  margin-bottom: 10px;
 }
 .div01 {
   background: url('/img/portfolio/links/01.png') no-repeat center;
@@ -424,7 +431,188 @@ sup {
   grid-column-end: 3;
 }
 .gallery-morebtn {
+  display: flex;
+  justify-content: center;
+}
+
+.morebtn-link {
+  background-color: rgba(255, 255, 255, 0);
   padding: 22px 54px;
   border: 1px solid var(--button);
-  box-sizing: border-box;
+
+  text-decoration: none;
+  color: var(--button);
+  transition: all 0.5s ease;
+}
+.morebtn-link:hover {
+  background-color: var(--button);
+  color: var(--white);
+  transition: all 0.5s ease;
+}
+.request-btn {
+  display: flex;
+  justify-content: center;
+  margin: 130px 0;
+}
+.request-link {
+  display: flex;
+  color: var(--body-text);
+  border-bottom: 1px solid var(--text-input);
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+.request-link:hover {
+  color: var(--button);
+  border-bottom: 1px solid var(--button);
+  transition: all 0.5s ease;
+}
+.arrow {
+  top: 8px;
+  position: relative;
+  border: solid var(--body-text);
+  border-width: 1px 1px 0 0;
+  width: 12px;
+  height: 12px;
+  margin-left: 10px;
+  transition: all 0.5s ease;
+}
+.request-link:hover > .arrow {
+  top: 8px;
+  position: relative;
+  border: solid var(--button);
+  border-width: 1px 1px 0 0;
+  width: 12px;
+  height: 12px;
+  margin-left: 10px;
+  transition: all 0.5s ease;
+}
+
+.arrow::after {
+  content: '';
+  position: absolute;
+  background-color: var(--body-text);
+  top: 50%;
+  right: 0;
+  width: 20px;
+  height: 2px;
+  margin-right: -3px;
+  transform: rotate(-45deg);
+  transition: all 0.5s ease;
+}
+.request-link:hover > .arrow::after {
+  content: '';
+  position: absolute;
+  background-color: var(--button);
+  top: 50%;
+  right: 0;
+  width: 20px;
+  height: 2px;
+  margin-right: -3px;
+  transform: rotate(-45deg);
+  transition: all 0.5s ease;
+}
+
+/* модальное окно  */
+
+.modal {
+  position: fixed;
+  /* фиксированное положение */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: var(--bg);
+  /* цвет фона */
+  z-index: 1050;
+  opacity: 0;
+  /* по умолчанию модальное окно прозрачно */
+  -webkit-transition: opacity 300ms ease-in;
+  -moz-transition: opacity 300ms ease-in;
+  transition: opacity 300ms ease-in;
+  /* анимация перехода */
+  pointer-events: none;
+  /* элемент невидим для событий мыши */
+}
+.modal:target {
+  opacity: 1;
+  pointer-events: auto;
+  overflow-y: auto;
+}
+.modal__dialog {
+  position: relative;
+  width: auto;
+  margin: 10px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 150px;
+}
+.modal__content {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: #fff;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  outline: 0;
+  padding: 50px;
+}
+.modal__close {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  margin-left: 3px;
+  margin-top: 10px;
+  top: -30px;
+  right: 20px;
+}
+.modal__close::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background-color: currentColor;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.modal__close::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background-color: currentColor;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.modal__tittle {
+  margin-bottom: 40px;
+}
+.modal__form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.modal__form-name input {
+
+}
+.modal__form-tel {
+}
+.modal__links {
+  display: flex;
+}
+.modal__btn {
+}
+.modal__btn-link {
+}
+.arrow__modal {
+}
+.modal__agree {
+}
+.small_text {
 }

@@ -55,10 +55,13 @@ header::after {
   color: var(--body-text);
 }
 .inverted .header-top__tel a svg {
+  fill: rgba(255, 255, 255, 0);
   stroke: var(--body-text);
+  transition: all 0.5s ease;
 }
 .inverted .header-top__tel a:hover svg {
   fill: var(--body-text);
+  transition: all 0.5s ease;
 }
 .header-top {
   display: flex;
@@ -75,13 +78,16 @@ header::after {
   flex-direction: row;
 }
 .header-top__menu a {
+  border-bottom: solid 1px rgba(255, 255, 255, 0);
   margin-right: 50px;
   text-decoration: none;
   color: var(--white);
+  transition: all 0.5s ease;
 }
 .header-top__menu a:hover {
   border-bottom: solid 1px var(--white);
   margin-bottom: -1px;
+  transition: all 0.5s ease;
 }
 .header-top__menu a:last-child {
   margin-right: 0;
@@ -96,14 +102,17 @@ header::after {
   align-items: center;
 }
 .header-top__tel a svg {
+  fill: rgba(255, 255, 255, 0);
   margin-right: 10px;
   stroke: var(--white);
   width: 23px;
   height: 23px;
-  fill: none;
+
+  transition: all 0.5s ease;
 }
 .header-top__tel a:hover > svg {
   fill: var(--white);
+  transition: all 0.5s ease;
 }
 .header-bottom {
   max-width: 1200px;

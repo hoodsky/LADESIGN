@@ -21,7 +21,7 @@ window.onscroll = function() {
   }
 };
 
-// Fetch all the details element.
+// открытие только одного блока "details" на странице
         const details = document.querySelectorAll("details");
 
         // Add the onclick listeners.
