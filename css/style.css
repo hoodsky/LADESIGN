@@ -598,9 +598,62 @@ sup {
   justify-content: space-between;
   margin-bottom: 40px;
 }
-.modal__form-name input {
+.modal__form span {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--body-text);
+}
+.modal__form-name {
+  width: 50%;
+  margin-right: 30px;
+}
+.modal__form input {
+  width: 100%;
+  border: none;
+  height: 30px;
+  border-bottom: 1px solid var(--body-text);
+  outline: none;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--button);
+}
+.modal__form input:focus ~ .floating-label,
+.modal__form input:not(:focus):valid ~ .floating-label {
+  top: -50px;
+  bottom: 10px;
+  /* left: 50px; */
+  font-size: 14px;
+  opacity: 1;
+}
+.floating-label {
+  position: relative;
+  pointer-events: none;
+  /* left: 50px; */
+  top: -25px;
+  transition: 0.2s ease all;
+}
+
+.floating-label-tel {
+  position: relative;
+  pointer-events: none;
+  /* left: 50px; */
+  top: -25px;
+  transition: 0.2s ease all;
+}
+*/ .modal__form-name input {
+  /* width: 100%; */
 }
 .modal__form-tel {
+  width: 50%;
+}
+.modal__form-tel input {
+  /* width: 100%; */
 }
 .modal__links {
   display: flex;
