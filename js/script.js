@@ -66,3 +66,9 @@ function checkParams() {
       document.body.classList.remove('loaded_hiding');
     }, 500);
   }
+
+
+
+
+Open: $('#menuToggle input').prop( "checked" ,true);
+Close: $('#menuToggle input').prop( "checked" ,false);
