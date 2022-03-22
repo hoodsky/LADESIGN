@@ -47,7 +47,7 @@ function checkParams() {
         $('#submit').attr('disabled', 'disabled');
     }
 }
-
+// предзагрузка страницы
   window.onload = function () {
     document.body.classList.add('loaded_hiding');
     window.setTimeout(function () {
