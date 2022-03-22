@@ -4,6 +4,10 @@ var className = "inverted";
 var classNameBtn = "back-button-hide";
 var classNameLogoHide = "logo-hide";
 var classNameLogoShow = "logo-show";
+var classManeNavbar = "checkbox__top"
+var classManeHamburger = "checkbox__top"
+
+
 var scrollTrigger = 60;
 
 window.onscroll = function() {
@@ -13,11 +17,18 @@ window.onscroll = function() {
     document.getElementsByClassName("back-button")[0].classList.add(classNameBtn);
     document.getElementsByClassName("header-logo_white")[0].classList.add(classNameLogoHide);
     document.getElementsByClassName("header-logo_dark")[0].classList.add(classNameLogoShow);
+    document.getElementsByClassName("checkbox")[0].classList.add(classManeNavbar);
+    document.getElementsByClassName("hamburger-lines")[0].classList.add(classManeHamburger);
+
+
   } else {
     document.getElementsByClassName("header-fixed")[0].classList.remove(className);
     document.getElementsByClassName("back-button")[0].classList.remove(classNameBtn);
     document.getElementsByClassName("header-logo_white")[0].classList.remove(classNameLogoHide);
     document.getElementsByClassName("header-logo_dark")[0].classList.remove(classNameLogoShow);
+    document.getElementsByClassName("checkbox")[0].classList.remove(classManeNavbar);
+    document.getElementsByClassName("hamburger-lines")[0].classList.remove(classManeHamburger);
+
   }
 };
 
