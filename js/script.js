@@ -67,8 +67,16 @@ function checkParams() {
     }, 500);
   }
 
+// Закрытие навбара при нажатии на ссылку
 
+var menu = document.getElementByClassName('header_top__menu');
+    var closeIcon = document.getElementByClassName("checkbox");
 
+    menu.addEventListener('click', handleMenuClick);
 
-Open: $('#menuToggle input').prop( "checked" ,true);
-Close: $('#menuToggle input').prop( "checked" ,false);
+    function handleMenuClick(event) {
+      if (event.target instanceof HTMLAnchorElement) {
+        closeIcon.checked = false;
+      }
+    }
+
