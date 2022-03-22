@@ -147,6 +147,8 @@ p .number {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -296,6 +298,7 @@ details summary {
   width: 42%;
 }
 .about-us__list summary svg {
+  min-width: 30px;
   transform: rotate(45deg);
   stroke: var(--body-text);
   transition: all 0.3s ease-out;

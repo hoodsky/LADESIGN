@@ -1,0 +1,27 @@
+@media (max-width: 1200px) {
+  .content {
+    max-width: 930px;
+  }
+  .header-top {
+    max-width: 930px;
+  }
+  .back-button {
+    right: 50px;
+  }
+  .about-us__list {
+    margin-right: 40px;
+  }
+  .about-us__content {
+    justify-content: space-between;
+  }
+  .about-us__list details[open] {
+    height: 205px;
+  }
+  .header-bottom {
+    padding: 185px 0 185px 0;
+  }
+}
+@media (max-width: 767px) {
+}
+@media (max-width: 350px) {
+}

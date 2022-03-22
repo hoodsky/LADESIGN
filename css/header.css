@@ -69,6 +69,8 @@ header::after {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 .header-top__logo {
 }
@@ -119,7 +121,7 @@ header::after {
   margin-right: auto;
   color: var(--white);
   text-align: center;
-  padding: 165px 0 300px 0;
+  padding: 270px 0 300px 0;
 }
 .header-bottom h1 {
   font-weight: 300;
