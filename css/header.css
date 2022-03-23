@@ -29,6 +29,7 @@ header::after {
 .header-logo_white {
   display: block;
   height: 45px;
+  width: 45px;
   /* z-index: 9; */
 }
 .logo-hide {
@@ -37,6 +38,7 @@ header::after {
 .header-logo_dark {
   display: none;
   height: 45px;
+  width: 45px;
   /* z-index: 10; */
 }
 
