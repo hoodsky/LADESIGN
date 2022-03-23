@@ -31,15 +31,7 @@ h1 {
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
-h1 .mob {
-  font-family: 'Roboto Condensed';
-  font-style: normal;
-  font-weight: 300;
-  font-size: 140px;
-  line-height: 164px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
+
 h2 {
   /* Title Н2-40 */
   font-family: 'Roboto Condensed';
@@ -50,16 +42,7 @@ h2 {
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
-h2 .mob {
-  /* H2_mob */
-  font-family: 'Roboto Condensed';
-  font-style: normal;
-  font-weight: 300;
-  font-size: 30px;
-  line-height: 36px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
+
 h3 {
   /* title Н3-30 */
   font-family: 'Roboto Condensed';
@@ -70,16 +53,7 @@ h3 {
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
-h3 .mob {
-  /* Н3_mob */
-  font-family: 'Roboto Condensed';
-  font-style: normal;
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 125%;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
+
 h4 {
   /* title Н4-20 */
   font-family: 'Roboto Condensed';
@@ -90,16 +64,7 @@ h4 {
   letter-spacing: 0.12em;
   text-transform: uppercase;
 }
-h4 .mob {
-  /* Н4_mob */
-  font-family: 'Roboto Condensed';
-  font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
+
 h5 {
   /* Menu 14 */
   font-family: 'Roboto Condensed';
@@ -377,16 +342,22 @@ sup {
 .portfolio__div {
   display: flex;
   justify-content: center;
+  overflow-y: hidden;
 }
 .portfolio__nav {
   display: flex;
   justify-content: center;
   border-bottom: 1px solid var(--body-text);
+  overflow-y: hidden;
+  flex-wrap: nowrap;
+  overflow-x: hidden;
+  white-space: nowrap;
 }
 .portfolio__nav a {
   margin-right: 50px;
   text-decoration: none;
   color: var(--body-text);
+  /* white-space: nowrap; */
 }
 .portfolio__nav a:hover {
   margin-bottom: -1px;

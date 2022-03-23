@@ -68,15 +68,3 @@ function checkParams() {
   }
 
 // Закрытие навбара при нажатии на ссылку
-
-var menu = document.getElementByClassName('header_top__menu');
-    var closeIcon = document.getElementByClassName("checkbox");
-
-    menu.addEventListener('click', handleMenuClick);
-
-    function handleMenuClick(event) {
-      if (event.target instanceof HTMLAnchorElement) {
-        closeIcon.checked = false;
-      }
-    }
-
