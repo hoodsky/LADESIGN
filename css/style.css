@@ -314,7 +314,7 @@ details summary {
   margin-bottom: 50px;
 }
 .about-us__photo {
-  background: url('/img/01.png') no-repeat center;
+  background: url('/img/01.avif') no-repeat center;
   width: 50%;
   height: 500px;
 }

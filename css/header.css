@@ -1,6 +1,6 @@
 header {
   /* background-image: url('/img/header/bg.png'); */
-  background: url('/img/header/bg.png') no-repeat center center;
+  background: url('/img/header/bg.avif') no-repeat center center;
   position: relative;
 }
 header::after {
