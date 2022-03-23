@@ -255,6 +255,7 @@
   .portfolio__gallery {
     grid-template-rows: repeat(8, 1fr);
     grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
   }
   .div01 {
     grid-column-start: 1;
