@@ -317,6 +317,7 @@ details summary {
   background: url('/img/01.avif') no-repeat center;
   width: 50%;
   height: 500px;
+  background-size: cover;
 }
 
 /* портфолио */
@@ -329,6 +330,7 @@ details summary {
 }
 .portfolio {
   color: var(--body-text);
+  width: 100%;
 }
 sup {
   vertical-align: super;
@@ -342,16 +344,19 @@ sup {
 .portfolio__div {
   display: flex;
   justify-content: center;
-  overflow-y: hidden;
+  width: 100%;
+  flex: 1 1 auto;
+  overflow-x: scroll;
 }
 .portfolio__nav {
   display: flex;
+  flex: 1 1 auto;
+  overflow-x: scroll;
   justify-content: center;
   border-bottom: 1px solid var(--body-text);
-  overflow-y: hidden;
-  flex-wrap: nowrap;
-  overflow-x: hidden;
-  white-space: nowrap;
+  flex-wrap: wrap;
+  width: 100%;
+  white-space: wrap;
 }
 .portfolio__nav a {
   margin-right: 50px;

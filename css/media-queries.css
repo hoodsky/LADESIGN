@@ -85,6 +85,9 @@
     top: 30px;
     transition: all 0.5s ease;
   }
+  .about-us__list details[open] {
+    height: 160px;
+  }
   .about-us__content {
     flex-direction: column;
   }
@@ -179,7 +182,7 @@
     display: none;
   }
 }
-@media (max-width: 350px) {
+@media (max-width: 700px) {
   h1 {
     /* H1_mob */
     font-family: 'Roboto Condensed';
@@ -219,5 +222,8 @@
     line-height: 24px;
     letter-spacing: 0.12em;
     text-transform: uppercase;
+  }
+  h6 {
+    font-size: 16px;
   }
 }
