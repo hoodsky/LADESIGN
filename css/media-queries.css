@@ -86,7 +86,7 @@
     transition: all 0.5s ease;
   }
   .about-us__list details[open] {
-    height: 160px;
+    height: 230px;
   }
   .about-us__content {
     flex-direction: column;
