@@ -175,6 +175,11 @@
   .div17 {
     display: none;
   }
+  .back-button {
+    right: 30px;
+    width: 50px;
+    height: 50px;
+  }
 }
 @media (max-width: 700px) {
   h1 {
@@ -224,6 +229,9 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
+  }
+  .portfolio {
+    width: 100vw;
   }
   .content {
     padding-right: 15px;
