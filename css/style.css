@@ -330,7 +330,7 @@ details summary {
 }
 .portfolio {
   color: var(--body-text);
-  width: 100%;
+  width: 100vw;
 }
 sup {
   vertical-align: super;
@@ -344,32 +344,33 @@ sup {
 .portfolio__div {
   display: flex;
   justify-content: center;
-  width: 100%;
-  flex: 1 1 auto;
-  overflow-x: scroll;
+  border-bottom: 1px solid var(--body-text);
 }
 .portfolio__nav {
-  display: flex;
-  flex: 1 1 auto;
-  overflow-x: scroll;
-  justify-content: center;
-  border-bottom: 1px solid var(--body-text);
-  flex-wrap: wrap;
-  width: 100%;
-  white-space: wrap;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+.portfolio__nav::-webkit-scrollbar {
+  display: none;
+}
+.portfolio__nav span {
+  margin-right: 50px;
 }
 .portfolio__nav a {
-  margin-right: 50px;
+  display: inline-block;
+
   text-decoration: none;
   color: var(--body-text);
-  /* white-space: nowrap; */
 }
 .portfolio__nav a:hover {
   margin-bottom: -1px;
   color: var(--button);
   border-bottom: 1px solid var(--button);
 }
-.portfolio__nav a:last-child {
+.portfolio__nav span:last-child {
   margin-right: 0;
 }
 
