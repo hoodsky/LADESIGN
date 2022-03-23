@@ -514,10 +514,10 @@ sup {
   background-color: rgba(255, 255, 255, 0);
   padding: 22px 54px;
   border: 1px solid var(--button);
-
   text-decoration: none;
   color: var(--button);
   transition: all 0.5s ease;
+  white-space: nowrap;
 }
 .morebtn-link:hover {
   background-color: var(--button);
@@ -736,12 +736,13 @@ sup {
 }
 .modal__btn-link {
   margin-right: 34px;
-  padding: 0px 50px;
+  padding: 20px 50px;
   background: var(--button);
   border: 1px solid var(--button);
   text-decoration: none;
   color: var(--white);
   display: flex;
+  justify-content: center;
   flex-direction: row;
   align-items: center;
   cursor: pointer;
