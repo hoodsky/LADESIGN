@@ -336,12 +336,6 @@ details summary {
 
 /* портфолио */
 
-.portfolio::before {
-  display: block;
-  content: '';
-  height: 85px;
-  margin: -85px 0 0 0;
-}
 .portfolio {
   color: var(--body-text);
   width: 100%;
@@ -737,13 +731,8 @@ sup {
   top: -25px;
   transition: 0.2s ease all;
 }
-*/ .modal__form-name input {
-  /* width: 100%; */
-}
 .modal__form-tel {
   width: 50%;
-}
-.modal__form-tel input {
 }
 .modal__links {
   display: flex;

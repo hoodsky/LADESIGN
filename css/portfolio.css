@@ -1,0 +1,57 @@
+.portfolio-link {
+  pointer-events: none;
+}
+
+.header-top__menu .portfolio-link {
+  color: black;
+  border-bottom: solid 1px black;
+}
+header {
+  background: none;
+  height: auto;
+}
+.header-bottom {
+  display: none;
+}
+.first-page__link {
+  display: none;
+}
+.header-arrow {
+  display: none;
+}
+.header-fixed {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px 0;
+  border-bottom: 1px solid var(--light-bg);
+}
+.header-logo_white {
+  display: none;
+}
+.header-logo_dark {
+  display: block;
+}
+.header-top__tel a,
+.header-top__menu a {
+  color: var(--body-text);
+}
+.header-top__menu a:hover {
+  border-bottom: solid 1px var(--body-text);
+}
+.header-top__tel a svg {
+  fill: rgba(255, 255, 255, 0);
+  stroke: var(--body-text);
+}
+.header-top__tel a:hover svg {
+  fill: var(--body-text);
+  transition: all 0.5s ease;
+}
+.hamburger-lines,
+.checkbox {
+  top: 30px;
+}
+.navbar .hamburger-lines .line {
+  background: black;
+}
+.portfolio {
+  margin-top: 150px;
+}

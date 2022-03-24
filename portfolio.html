@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LADESIGN</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&family=Roboto:wght@300;400&display=swap"
+        rel="stylesheet" media="screen and (color)">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" media="screen and (color)" href="./css/media-queries.css">
+    <link rel="stylesheet" href="./css/portfolio.css">
+</head>
+
+<script>
+    // скрипт для вставки шапки и подвала на страницу
+    function includeHTML() {
+        var z, i, elmnt, file, xhttp;
+        /* Loop through a collection of all HTML elements: */
+        z = document.getElementsByTagName("*");
+        for (i = 0; i < z.length; i++) {
+            elmnt = z[i];
+            /*search for elements with a certain atrribute:*/
+            file = elmnt.getAttribute("w3-include-html");
+            if (file) {
+                /* Make an HTTP request using the attribute value as the file name: */
+                xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function () {
+                    if (this.readyState == 4) {
+                        if (this.status == 200) {
+                            elmnt.innerHTML = this.responseText;
+                        }
+                        if (this.status == 404) {
+                            elmnt.innerHTML = "Page not found.";
+                        }
+                        /* Remove the attribute, and call this function once more: */
+                        elmnt.removeAttribute("w3-include-html");
+                        includeHTML();
+                    }
+                }
+                xhttp.open("GET", file, true);
+                xhttp.send();
+                /* Exit the function: */
+                return;
+            }
+        }
+    }
+</script>
+
+<body>
+    <!-- предзагрузка страницы  -->
+    <div class="page-loader">
+        <div class="loader">Загрузка...</div>
+    </div>
+    <!-- шапка -->
+    <header w3-include-html="header.html"></header>
+    <!-- шапка конец -->
+
+    <main>
+        <div id="potfolio" class="portfolio">
+            <div class="content">
+                <div class="portfolio__tittle">
+                    <h2>Портфолио</h2>
+                </div>
+                <div class="portfolio__div">
+                    <div class="portfolio__nav">
+                        <span>
+                            <a href="">
+                                <h5>все работы<sup>29</sup> </h5>
+                            </a>
+                        </span>
+                        <span>
+                            <a href="">
+                                <h5>квартиры<sup>18</sup> </h5>
+                            </a>
+                        </span>
+                        <span>
+                            <a href="">
+                                <h5>дома<sup>18</sup> </h5>
+                            </a>
+                        </span>
+                        <span>
+                            <a href="">
+                                <h5>коммерческие помещения<sup>12</sup> </h5>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- портфолио галерея -->
+
+                <div class="portfolio__gallery">
+                    <a class="gallery-div div01" href="">
+                        <div>
+                            <h4>loft</h4>
+                            <h6>Unique collection</h6>
+                        </div>
+                    </a>
+                    <a href="" class="gallery-div div02">
+                        <div>
+                            <h4>Название в две <br>строки</h4>
+                            <h6>Unique collection</h6>
+                        </div>
+                    </a>
+                    <a href="" class="gallery-div div03">
+                        <div>
+                            <h4>Название в две <br>строки</h4>
+                            <h6>Unique collection</h6>
+                        </div>
+                    </a>
+                    <a href="" class="gallery-div div04">
+                        <div>
+                            <h4>Название в две <br>строки</h4>
+                            <h6>Unique collection</h6>
+                        </div>
+                    </a>
+                    <a href="" class="gallery-div div05">
+                        <div>
+                            <h4>Lorem ipsum dolor sit amet.</h4>
+                            <h6>Unique collection</h6>
+                        </div>
+                    </a>
+                    <a href="" class="gallery-div div06">
+                        <div>
+                            <h4>Lorem, ipsum dolor.</h4>
+                            <h6>Lorem, ipsum.</h6>
+                        </div>
+                    </a>
+                    <a href="" class="gallery-div div07">
+                        <div>
+                            <h4>Lorem, ipsum dolor.</h4>
+                            <h6>Lorem, ipsum.</h6>
+                        </div>
+                    </a>
+                    <a href="" class="gallery-div div08">
+                        <div>
+                            <h4>Lorem, ipsum dolor.</h4>
+                            <h6>Lorem, ipsum.</h6>
+                        </div>
+                    </a>
+                    <a href="" class="gallery-div div09">
+                        <div>
+                            <h4>Lorem, ipsum dolor.</h4>
+                            <h6>Lorem, ipsum.</h6>
+                        </div>
+                    </a>
+                    <a href="" class="gallery-div div10">
+                        <div>
+                            <h4>Lorem, ipsum dolor.</h4>
+                            <h6>Lorem, ipsum.</h6>
+                        </div>
+                    </a>
+                    <a href="" class="gallery-div div11">
+                        <div>
+                            <h4>Lorem, ipsum dolor.</h4>
+                            <h6>Lorem, ipsum.</h6>
+                        </div>
+                    </a>
+                    <a href="" class="gallery-div div12">
+                        <div>
+                            <h4>Lorem, ipsum dolor.</h4>
+                            <h6>Lorem, ipsum.</h6>
+                        </div>
+                    </a>
+                    <a href="" class="gallery-div div13">
+                        <div>
+                            <h4>Lorem, ipsum dolor.</h4>
+                            <h6>Lorem, ipsum.</h6>
+                        </div>
+                    </a>
+                    <a href="" class="gallery-div div14">
+                        <div>
+                            <h4>Lorem, ipsum dolor.</h4>
+                            <h6>Lorem, ipsum.</h6>
+                        </div>
+                    </a>
+                    <a href="" class="gallery-div div15">
+                        <div>
+                            <h4>Lorem, ipsum dolor.</h4>
+                            <h6>Lorem, ipsum.</h6>
+                        </div>
+                    </a>
+                    <a href="" class="gallery-div div16">
+                        <div>
+                            <h4>Lorem, ipsum dolor.</h4>
+                            <h6>Lorem, ipsum.</h6>
+                        </div>
+                    </a>
+                    <a href="" class="gallery-div div17">
+                        <div>
+                            <h4>Lorem, ipsum dolor.</h4>
+                            <h6>Lorem, ipsum.</h6>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="gallery-morebtn">
+                    <a class="morebtn-link" href="">
+                        <h5>показать еще работы</h5>
+                    </a>
+                </div>
+                <div class="request-btn">
+                    <a class="request-link" href="#openModal">
+                        <h2>оставить заявку на проект</h2>
+                        <div class="arrow"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- кнопка для возврата на верх страницы -->
+
+    <button onclick="window.location.href='#top'" class="back-button">
+        <div class="top-icon">
+        </div>
+    </button>
+
+    <!-- кнопка для возврата на верх страницы конец -->
+
+
+    <!-- подвал -->
+    <footer w3-include-html="footer.html"></footer>
+    <!-- подвал конец -->
+
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script>
+        // скрипт для вставки шапки и подвала на страницу
+        includeHTML();
+    </script>
+</body>
+
+</html>
