@@ -219,7 +219,7 @@ input[type='number'] {
   justify-content: center;
   align-items: center;
   position: fixed;
-  bottom: -40px;
+  bottom: -60px;
   right: 40px;
   width: 30px;
   height: 30px;
@@ -259,6 +259,12 @@ details summary {
 }
 .about-us__tittle {
   margin-bottom: 50px;
+}
+.about-us__tittle::before {
+  display: block;
+  content: '';
+  height: 150px;
+  margin: -150px 0 0 0;
 }
 .about-us__content {
   display: flex;
@@ -330,8 +336,8 @@ details summary {
 .portfolio::before {
   display: block;
   content: '';
-  height: 100px;
-  margin: -100px 0 0 0;
+  height: 85px;
+  margin: -85px 0 0 0;
 }
 .portfolio {
   color: var(--body-text);
