@@ -6,7 +6,7 @@ header {
   height: 100vh;
   scroll-snap-align: start;
   scroll-snap-stop: always;
-background-attachment: fixed;
+  background-attachment: fixed;
 }
 header::after {
   content: '';
@@ -133,7 +133,7 @@ header::after {
   margin-right: auto;
   color: var(--white);
   text-align: center;
-  padding: 270px 0 300px 0;
+  padding: 40vh 0 0 0;
 }
 .header-bottom h1 {
   font-weight: 300;

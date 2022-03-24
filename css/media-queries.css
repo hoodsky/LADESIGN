@@ -18,7 +18,7 @@
     height: 205px;
   }
   .header-bottom {
-    padding: 185px 0 185px 0;
+    /* padding: 185px 0 185px 0; */
   }
 }
 @media (max-width: 800px) {
