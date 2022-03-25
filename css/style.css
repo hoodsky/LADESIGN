@@ -111,10 +111,7 @@ p .number {
   line-height: 16px;
   text-transform: uppercase;
 }
-main {
-  scroll-snap-align: start;
-  scroll-snap-stop: normal;
-}
+
 .content {
   max-width: 1200px;
   margin-left: auto;
