@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LADESIGN</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&family=Roboto:wght@300;400&display=swap"
+        rel="stylesheet" media="screen and (color)">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/loft.css">
+    <link rel="stylesheet" media="screen and (color)" href="./css/media-queries.css">
+</head>
+
+<script>
+    // скрипт для вставки шапки и подвала на страницу
+    function includeHTML() {
+        var z, i, elmnt, file, xhttp;
+        /* Loop through a collection of all HTML elements: */
+        z = document.getElementsByTagName("*");
+        for (i = 0; i < z.length; i++) {
+            elmnt = z[i];
+            /*search for elements with a certain atrribute:*/
+            file = elmnt.getAttribute("w3-include-html");
+            if (file) {
+                /* Make an HTTP request using the attribute value as the file name: */
+                xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function () {
+                    if (this.readyState == 4) {
+                        if (this.status == 200) {
+                            elmnt.innerHTML = this.responseText;
+                        }
+                        if (this.status == 404) {
+                            elmnt.innerHTML = "Page not found.";
+                        }
+                        /* Remove the attribute, and call this function once more: */
+                        elmnt.removeAttribute("w3-include-html");
+                        includeHTML();
+                    }
+                }
+                xhttp.open("GET", file, true);
+                xhttp.send();
+                /* Exit the function: */
+                return;
+            }
+        }
+    }
+</script>
+
+<body>
+    <!-- предзагрузка страницы  -->
+    <div class="page-loader">
+        <div class="loader">Загрузка...</div>
+    </div>
+    <!-- шапка -->
+    <header w3-include-html="header.html"></header>
+    <!-- шапка конец -->
+
+    <main>
+        <!-- наша команда даёт уверенность -->
+
+        <div class="design-section">
+            <div class="content">
+                <div class="design-section__tittle">
+                    <h3>Дизайн 1-комнатной квартиры в стиле loft</h3>
+                </div>
+                <div class="design-section__content">
+                    <div class="design-section__table">
+                        <div>
+                            <h5>
+                                Для кого
+                            </h5>
+                            <p>
+                                молодой мужчина
+                            </p>
+                        </div>
+                        <div>
+                            <h5>
+                                общая площадь
+                            </h5>
+                            <p>
+                                60м2
+                            </p>
+                        </div>
+                        <div>
+                            <h5>
+                                место расположения
+                            </h5>
+                            <p>
+                                Краснодар
+                            </p>
+                        </div>
+                        <div>
+                            <h5>
+                                срок выполнения
+                            </h5>
+                            <p>
+                                1 месяц
+                            </p>
+                        </div>
+                    </div>
+                    <div class="design-section__description">
+                        <p>В этой квартире для молодого человека много бетона, кирпича и натурального дерева. Это лофт
+                            в классическом понимании
+                            и с очень интересными деталями.
+                            В интерьере использовано довольно много различных материалов и текстур. Однако благодаря
+                            тому,
+                            что каждый материал
+                            применяется не единожды и находит себе продолжение в других помещениях, квартира смотрится
+                            цельным объёмом, где все
+                            текстуры дополняют друг друга и сочетаются между собой.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="gallery-section">
+
+                </div>
+            </div>
+            <div class="content">
+                <div class="design-additionally">
+                    <div class="design-additionally__tittle">
+                        <h3>практичность и рациональное использование каждого квадратного метра</h3>
+                    </div>
+                    <div class="design-additionally__content">
+                        <div>
+                            <h4>Задача</h4>
+                            <p>В этой квартире для молодого человека много бетона, кирпича и натурального дерева. Это
+                                лофт в
+                                классическом понимании и с
+                                очень интересными деталями.</p>
+                        </div>
+                        <div>
+                            <h4>решение</h4>
+                            <p>В этой квартире для молодого человека много бетона, кирпича и натурального дерева. Это
+                                лофт
+                                в классическом понимании
+                                и с очень интересными деталями.
+                            </p>
+                            <p>
+                                В интерьере использовано довольно много различных материалов и текстур. Однако благодаря
+                                тому, что каждый материал
+                                применяется не единожды и находит себе продолжение в других помещениях, квартира
+                                смотрится
+                                цельным объёмом, где все
+                                текстуры дополняют друг друга и сочетаются между собой.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="design-photo">
+
+            </div>
+            <div class="content">
+                <div class="proj-features">
+                    <div class="proj-features__tittle">
+                        <h4>особенности проекта</h4>
+                    </div>
+                    <div class="proj-features__content">
+                        <div>
+                            <p>В этой квартире для молодого человека много бетона, кирпича и натурального дерева. Это
+                                лофт
+                                в классическом понимании
+                                и с очень интересными деталями.</p>
+                            <p>В интерьере использовано довольно много различных материалов и текстур.</p>
+                        </div>
+                        <div>
+                            <p>
+                                В этой квартире для молодого человека много бетона, кирпича и натурального дерева. Это
+                                лофт в классическом понимании и с
+                                очень интересными деталями.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="proj-features__gallery">
+                        <div class="gallery-cell"></div>
+                        <div class="gallery-cell"></div>
+                        <div class="gallery-cell"></div>
+                        <div class="gallery-cell"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="more">
+                    <div class="more__tittle">
+                        <h3>похожие проекты</h3>
+                    </div>
+                </div>
+                <div class="more__gallery">
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="request-btn">
+            <a class="request-link" href="#openModal">
+                <h2>оставить заявку на проект</h2>
+                <div class="arrow"></div>
+            </a>
+        </div>
+
+        <!-- модальное окно с контактами начало  -->
+        <div id="openModal" class="modal">
+            <div class="modal__dialog">
+                <div class="modal__content">
+                    <div>
+                        <a class="modal__close" href="#close">
+                        </a>
+                    </div>
+                    <form action="">
+                        <div class="modal__tittle">
+                            <h3>оставЬТЕ СВОИ КОНТАКТЫ. мЫ СВЯЖЕМСЯ С ВАМИ И ОБСУДИМ ВАШ ПРОЕКТ</h3>
+                        </div>
+                        <div class="modal__form">
+                            <div class="modal__form-name">
+                                <input id="name" type="text" onkeyup='checkParams()' required>
+                                <span class="floating-label">Ваше имя</span>
+                            </div>
+                            <div class="modal__form-tel">
+                                <input id="phone" type="number" onkeyup='checkParams()' required>
+                                <span class="floating-label">Ваш телефон</span>
+                            </div>
+                        </div>
+                        <div class="modal__links">
+                            <button onclick="document.location.href='#openModalSend';" class="modal__btn-link"
+                                id="submit" disabled>
+                                <h5>отправить</h5>
+                                <div class="arrow__modal"></div>
+                            </button>
+                            <div class="modal__agree">
+                                <p class="small_text">Нажимая на кнопку, я даю <a href="">согласие на обработку
+                                        персональных
+                                        данных</a></p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="openModalSend" class="modal-send">
+            <div class="modal-send__dialog">
+                <div class="modal-send__content">
+                    <div>
+                        <a href="#close" class="modal-send__close"></a>
+                    </div>
+                    <div>
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M27.5002 58C12.3377 58 0 45.6628 0 30.5002C0 15.3377 12.3377 3 27.5002 3C32.7728 3 37.9025 4.50238 42.335 7.34739C43.2052 7.9077 43.4602 9.06767 42.8999 9.94017C42.3378 10.8127 41.1801 11.0649 40.3076 10.5051C36.4825 8.04732 32.0527 6.75001 27.5002 6.75001C14.4049 6.75001 3.75001 17.4049 3.75001 30.5002C3.75001 43.5951 14.4049 54.25 27.5002 54.25C40.5951 54.25 51.25 43.5951 51.25 30.5002C51.25 29.7174 51.2124 28.9425 51.1401 28.1803C51.0403 27.1476 51.7952 26.2325 52.8252 26.1327C53.8602 26.0375 54.7725 26.7878 54.8727 27.8177C54.9574 28.7003 55 29.5952 55 30.5002C55 45.6628 42.6628 58 27.5002 58Z"
+                                fill="#41A239" />
+                            <path
+                                d="M26.9694 40C26.4953 40 26.0207 39.8188 25.6602 39.4546L14.5428 28.2943C13.8191 27.5673 13.8191 26.3893 14.5428 25.6628C15.2666 24.9362 16.4401 24.9362 17.1639 25.6628L26.9721 35.5088L52.8357 9.54494C53.5599 8.81835 54.7334 8.81835 55.4572 9.54494C56.1809 10.2715 56.1809 11.4495 55.4572 12.1761L28.2812 39.4569C27.918 39.8188 27.4439 40 26.9694 40Z"
+                                fill="#41A239" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h3>Ваша Заявка успешно отправлена</h3>
+                    </div>
+                    <div>
+                        <p>Спасибо, что обратились в нашу студию. Наш дизайнер с вами свяжется</p>
+                    </div>
+                    <div class="modal-send__social">
+                        <a href="">
+                            <h5>houzz</h5>
+                        </a>
+                        <a href="">
+                            <h5>facebook</h5>
+                        </a>
+                        <a href="">
+                            <h5>vkontakte</h5>
+                        </a>
+                        <a href="">
+                            <h5>instagram</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- модальное окно с контактами конец  -->
+    </main>
+
+    <!-- кнопка для возврата на верх страницы -->
+
+    <button onclick="window.location.href='#top'" class="back-button">
+        <div class="top-icon">
+        </div>
+    </button>
+
+    <!-- кнопка для возврата на верх страницы конец -->
+
+
+    <!-- подвал -->
+    <footer w3-include-html="footer.html"></footer>
+    <!-- подвал конец -->
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script>
+        // скрипт для вставки шапки и подвала на страницу
+        includeHTML();
+    </script>
+    <script type="text/javascript">
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 60) {
+                $('.header__content').addClass('sticky');
+                $('.header-bottom').addClass('header-bottom-hide');
+            }
+            else {
+                $('.header__content').removeClass('sticky');
+                $('.header-bottom').removeClass('header-bottom-hide');
+            }
+        });
+    </script>
+
+</body>
+
+</html>

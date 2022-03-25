@@ -1,0 +1,73 @@
+header {
+  background: url('/img/portfolio/loft/loft-back.avif') no-repeat center center;
+  position: relative;
+  background-size: cover;
+  background-attachment: fixed;
+  margin-bottom: 150px;
+}
+.header__tittle,
+.header__subtittle {
+  display: none;
+}
+.header__design-tittle,
+.header__design-subtittle {
+  display: block;
+}
+.design-section {
+  display: flex;
+  flex-direction: column;
+  color: var(--main-color);
+}
+.design-section__tittle {
+  max-width: 50%;
+  margin-bottom: 50px;
+}
+.design-section__content {
+  display: flex;
+  column-gap: 100px;
+  margin-bottom: 100px;
+}
+.design-section__table {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  justify-content: space-around;
+}
+.design-section__table div {
+  display: flex;
+  padding: 20px 0;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--light-bg);
+}
+
+.design-section__description {
+  width: 40%;
+  align-self: center;
+}
+.gallery-section {
+}
+.design-additionally {
+}
+.design-additionally__tittle {
+}
+.design-additionally__content {
+}
+.design-photo {
+}
+.proj-features {
+}
+.proj-features__tittle {
+}
+.proj-features__content {
+}
+.proj-features__gallery {
+}
+.gallery-cell {
+}
+.more {
+}
+.more__tittle {
+}
+.more__gallery {
+}
