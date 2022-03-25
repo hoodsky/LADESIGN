@@ -6,8 +6,6 @@ var classNameLogoHide = "logo-hide";
 var classNameLogoShow = "logo-show";
 var classManeNavbar = "checkbox__top"
 var classManeHamburger = "checkbox__top"
-
-
 var scrollTrigger = 60;
 
 window.onscroll = function() {
@@ -31,6 +29,7 @@ window.onscroll = function() {
 
   }
 };
+
 
 // открытие только одного блока "details" на странице
         const details = document.querySelectorAll("details");

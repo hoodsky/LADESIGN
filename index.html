@@ -416,6 +416,20 @@
         // скрипт для вставки шапки и подвала на страницу
         includeHTML();
     </script>
+    <script type="text/javascript">
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 60) {
+                $('.header__content').addClass('sticky');
+                $('.header-bottom').addClass('header-bottom-hide');
+            }
+            else {
+                $('.header__content').removeClass('sticky');
+                $('.header-bottom').removeClass('header-bottom-hide');
+            }
+        });
+    </script>
 </body>
 
 </html>

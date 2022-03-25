@@ -13,6 +13,9 @@ header {
 .header-bottom {
   display: none;
 }
+.header__content {
+  height: auto;
+}
 .first-page__link {
   display: none;
 }
