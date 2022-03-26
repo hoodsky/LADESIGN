@@ -67,3 +67,15 @@ function checkParams() {
   }
 
 // Закрытие навбара при нажатии на ссылку
+
+$('#lightSlider').lightSlider({
+    gallery: false,
+    item: 1,
+    loop:true,
+    slideMargin: 10,
+  thumbItem: 0,
+  useCSS: true,
+  
+            autoWidth: false,
+  // adaptiveHeight:true,
+});
