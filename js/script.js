@@ -75,7 +75,6 @@ $('#lightSlider').lightSlider({
     slideMargin: 10,
   thumbItem: 0,
   useCSS: true,
-  
-            autoWidth: false,
+  autoWidth: false,
   // adaptiveHeight:true,
 });
