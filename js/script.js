@@ -1,4 +1,4 @@
-// фиксирование хедера при скроле
+// фиксирование хедера и появление кнопки "наверх" при скроле страницы
 
 var className = "inverted";
 var classNameBtn = "back-button-hide";
@@ -9,7 +9,6 @@ var classManeHamburger = "checkbox__top"
 var scrollTrigger = 60;
 
 window.onscroll = function() {
-  // We add pageYOffset for compatibility with IE.
   if (window.scrollY >= scrollTrigger || window.pageYOffset >= scrollTrigger) {
     document.getElementsByClassName("header-fixed")[0].classList.add(className);
     document.getElementsByClassName("back-button")[0].classList.add(classNameBtn);
@@ -17,8 +16,6 @@ window.onscroll = function() {
     document.getElementsByClassName("header-logo_dark")[0].classList.add(classNameLogoShow);
     document.getElementsByClassName("checkbox")[0].classList.add(classManeNavbar);
     document.getElementsByClassName("hamburger-lines")[0].classList.add(classManeHamburger);
-
-
   } else {
     document.getElementsByClassName("header-fixed")[0].classList.remove(className);
     document.getElementsByClassName("back-button")[0].classList.remove(classNameBtn);
@@ -30,14 +27,11 @@ window.onscroll = function() {
   }
 };
 
-
 // открытие только одного блока "details" на странице
-        const details = document.querySelectorAll("details");
-
-        // Add the onclick listeners.
+const details = document.querySelectorAll("details");
+        
         details.forEach((targetDetail) => {
             targetDetail.addEventListener("click", () => {
-                // Close all the details that are not targetDetail.
                 details.forEach((detail) => {
                     if (detail !== targetDetail) {
                         detail.removeAttribute("open");
@@ -58,18 +52,17 @@ function checkParams() {
     }
 }
 // предзагрузка страницы
-  window.onload = function () {
-    document.body.classList.add('loaded_hiding');
+window.onload = function () {
+    
+  document.body.classList.add('loaded_hiding');
+  
     window.setTimeout(function () {
       document.body.classList.add('loaded');
       document.body.classList.remove('loaded_hiding');
     }, 500);
   }
 
-// Закрытие навбара при нажатии на ссылку
-
-
-
+// прокрутка раздела "похожие проекты"
    const buttonRight = document.getElementById('moreRight');
     const buttonLeft = document.getElementById('moreLeft');
 
@@ -80,12 +73,28 @@ function checkParams() {
       document.getElementById('moreGallery').scrollLeft -= 200;
 };
     
-   const buttonRightSlide = document.getElementById('slideRight');
-    const buttonLeftSlide = document.getElementById('slideLeft');
+// прокрутка слайдера на странице работы
+        const scroller = document.querySelector('.slider-gallery');
+        const nextBtn = document.querySelector('.slideRight');
+        const prevBtn = document.querySelector('.slideLeft');
+        const itemWidth = document.querySelector('.slider-cell').clientWidth;
 
-    buttonRightSlide.onclick = function () {
-      document.getElementById('sliderGallery').scrollLeft += 1500;
-    };
-    buttonLeftSlide.onclick = function () {
-      document.getElementById('sliderGallery').scrollLeft -= 1500;
-};
+        nextBtn.addEventListener('click', scrollToNextItem);
+        prevBtn.addEventListener('click', scrollToPrevItem);
+
+        function scrollToNextItem() {
+            if (scroller.scrollLeft < (scroller.scrollWidth - itemWidth))
+                // The scroll position is not at the beginning of last item
+                scroller.scrollBy({ left: itemWidth, top: 0, behavior: 'smooth' });
+            else
+                // Last item reached. Go back to first item by setting scroll position to 0
+                scroller.scrollTo({ left: 0, top: 0, behavior: 'smooth' });
+        }
+        function scrollToPrevItem() {
+            if (scroller.scrollLeft != 0)
+                // The scroll position is not at the beginning of first item
+                scroller.scrollBy({ left: -itemWidth, top: 0, behavior: 'smooth' });
+            else
+                // This is the first item. Go to last item by setting scroll position to scroller width
+                scroller.scrollTo({ left: scroller.scrollWidth, top: 0, behavior: 'smooth' });
+        }

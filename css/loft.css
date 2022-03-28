@@ -30,7 +30,7 @@ header {
 .design-section__table {
   display: flex;
   flex-direction: column;
-  width: 40%;
+  width: 100%;
   justify-content: space-around;
 }
 .design-section__table div {
@@ -41,15 +41,16 @@ header {
   border-bottom: 1px solid var(--light-bg);
 }
 .design-section__description {
-  width: 40%;
+  width: 100%;
   align-self: center;
 }
 
 .slider-gallery {
-  height: 600px;
+  height: 700px;
   scroll-snap-type: x mandatory;
   display: -webkit-box;
   overflow-x: scroll;
+  overflow-y: hidden;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: -ms-autohiding-scrollbar;
@@ -57,8 +58,9 @@ header {
 .slider-gallery::-webkit-scrollbar {
   display: none;
 }
+
 .slider-cell {
-  height: 600px;
+  height: 700px;
   display: block;
   width: 100%;
   scroll-snap-align: start;
@@ -84,7 +86,6 @@ header {
   background: url(/img/portfolio/loft/06.avif) no-repeat center center;
   background-size: cover;
 }
-
 .slider__buttons {
   display: flex;
   justify-content: space-between;
@@ -109,12 +110,12 @@ header {
 #slideLeft {
   left: 10px;
   position: relative;
-  top: -300px;
+  top: -350px;
 }
 #slideRight {
   right: 10px;
   position: relative;
-  top: -300px;
+  top: -350px;
 }
 #slideLeft::before {
   content: '';
@@ -140,7 +141,10 @@ header {
   -webkit-transform: rotate(-45deg);
   transform: rotate(45deg);
 }
-
+.slider-nav {
+  display: flex;
+  justify-content: center;
+}
 .design-additionally {
   margin: 150px 0 100px 0;
 }
@@ -151,10 +155,11 @@ header {
 .design-additionally__content {
   display: flex;
   justify-content: space-between;
+  column-gap: 100px;
 }
 .design-additionally__content div {
-  width: 50%;
-  padding-right: 5%;
+  width: 100%;
+  /* padding-right: 5%; */
 }
 .design-additionally__content div:last-child {
   margin-right: 0;
@@ -180,9 +185,9 @@ header {
   justify-content: space-between;
 }
 .proj-features__content div {
-  width: 50%;
+  width: 100%;
   margin-bottom: 50px;
-  padding-right: 5%;
+  column-gap: 30px;
 }
 .proj-features__content div:last-child {
   padding-right: 0;
@@ -193,9 +198,7 @@ header {
   grid-template-rows: 1fr 1fr;
   gap: 30px;
 }
-.proj-features__gallery a {
-  /* display: block; */
-}
+
 .gallery-thumb {
   width: 100%;
 }
@@ -203,6 +206,7 @@ header {
 .more__tittle {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .more__gallery {
@@ -214,48 +218,43 @@ header {
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: -ms-autohiding-scrollbar;
 }
+.more__gallery a {
+  display: inline-block;
+  max-width: 100%;
+}
+
 .more__gallery::-webkit-scrollbar {
   display: none;
 }
 .more__gallery-cell {
   width: 270px;
   height: 270px;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
 }
 .gallery-cell1 {
   background: url(/img/portfolio/links/01.avif) no-repeat center center;
   background-size: cover;
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
 }
 .gallery-cell2 {
   background: url(/img/portfolio/links/02.avif) no-repeat center center;
   background-size: cover;
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
 }
 .gallery-cell3 {
   background: url(/img/portfolio/links/03.avif) no-repeat center center;
   background-size: cover;
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
 }
 .gallery-cell4 {
   background: url(/img/portfolio/links/04.avif) no-repeat center center;
   background-size: cover;
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
 }
 .gallery-cell5 {
   background: url(/img/portfolio/links/05.avif) no-repeat center center;
   background-size: cover;
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
 }
 .gallery-cell6 {
   background: url(/img/portfolio/links/06.avif) no-repeat center center;
   background-size: cover;
-  scroll-snap-align: end;
-  scroll-snap-stop: always;
 }
 #moreLeft {
   position: relative;

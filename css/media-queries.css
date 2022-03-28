@@ -1,4 +1,4 @@
-@media (max-width: 1200px) {
+@media (max-width: 1100px) {
   .content {
     max-width: 930px;
   }
@@ -16,6 +16,23 @@
   }
   .about-us__list details[open] {
     height: 205px;
+  }
+  .design-section__content {
+    column-gap: 30px;
+  }
+  .slider-cell,
+  .slider-gallery {
+    height: 600px;
+  }
+  #slideLeft,
+  #slideRight {
+    top: -300px;
+  }
+  .design-additionally__content {
+    column-gap: 30px;
+  }
+  .design-additionally__tittle {
+    width: 85%;
   }
 }
 @media (max-width: 800px) {
@@ -39,7 +56,7 @@
     left: 0;
     background: black;
     /* цвет фона */
-    /* z-index: 8; */
+    z-index: 8;
     opacity: 0;
     /* по умолчанию модальное окно прозрачно */
     -webkit-transition: opacity 300ms ease-in;
@@ -47,6 +64,7 @@
     transition: opacity 300ms ease-in;
     /* анимация перехода */
     pointer-events: none;
+    height: 100vh;
     /* элемент невидим для событий мыши */
   }
   .navbar input[type='checkbox']:checked ~ .header-top__menu {
@@ -57,6 +75,7 @@
     align-items: center;
     justify-content: center;
     pointer-events: auto;
+    height: 100vh;
   }
   .header-top__tel {
     margin-right: 165px;
@@ -168,6 +187,12 @@
     right: 30px;
     width: 50px;
     height: 50px;
+  }
+  .more__gallery-cell {
+    width: 324px;
+    height: 324px;
+  }
+  .more__gallery {
   }
 }
 @media (max-width: 700px) {
