@@ -40,13 +40,107 @@ header {
   align-items: center;
   border-bottom: 1px solid var(--light-bg);
 }
-
 .design-section__description {
   width: 40%;
   align-self: center;
 }
-.gallery-section {
+
+.slider-gallery {
+  height: 600px;
+  scroll-snap-type: x mandatory;
+  display: -webkit-box;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
 }
+.slider-gallery::-webkit-scrollbar {
+  display: none;
+}
+.slider-cell {
+  height: 600px;
+  display: block;
+  width: 100%;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+.slider-img1 {
+  background: url(/img/portfolio/loft/01.avif) no-repeat center center;
+  background-size: cover;
+}
+.slider-img2 {
+  background: url(/img/portfolio/loft/loft-back.avif) no-repeat center center;
+  background-size: cover;
+}
+.slider-img3 {
+  background: url(/img/portfolio/loft/04.avif) no-repeat center center;
+  background-size: cover;
+}
+.slider-img4 {
+  background: url(/img/portfolio/loft/05.avif) no-repeat center center;
+  background-size: cover;
+}
+.slider-img5 {
+  background: url(/img/portfolio/loft/06.avif) no-repeat center center;
+  background-size: cover;
+}
+
+.slider__buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.slider-button {
+  content: '';
+  border-radius: 50%;
+  border: 1px solid var(--main-color);
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.164);
+  backdrop-filter: blur(5px);
+  opacity: 0.5;
+  transition: 0.3s all ease;
+}
+.slider-button:hover {
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.815);
+  opacity: 1;
+  transition: 0.3s all ease;
+}
+#slideLeft {
+  left: 10px;
+  position: relative;
+  top: -300px;
+}
+#slideRight {
+  right: 10px;
+  position: relative;
+  top: -300px;
+}
+#slideLeft::before {
+  content: '';
+  position: absolute;
+  left: 16px;
+  top: 13px;
+  width: 10px;
+  height: 10px;
+  border-top: solid 1px var(--button);
+  border-right: solid 1px var(--button);
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+#slideRight::before {
+  content: '';
+  position: absolute;
+  left: 12px;
+  top: 14px;
+  width: 10px;
+  height: 10px;
+  border-top: solid 1px var(--button);
+  border-right: solid 1px var(--button);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(45deg);
+}
+
 .design-additionally {
   margin: 150px 0 100px 0;
 }
@@ -110,35 +204,6 @@ header {
   display: flex;
   justify-content: center;
 }
-.more__gallery {
-}
-.demo ul {
-  max-height: 700px;
-}
-
-.slider-img {
-  width: 100%;
-
-  /* border-radius: 50%; */
-}
-
-.lSSlideOuter .lSPager.lSpg > li:hover a,
-.lSSlideOuter .lSPager.lSpg > li.active a {
-  background-color: var(--button);
-  height: 2px;
-}
-.lSSlideOuter .lSPager.lSpg > li a {
-  background-color: var(--text-input);
-  height: 1px;
-  width: 50px;
-}
-.lSSlideOuter .lSPager.lSpg > li {
-  padding: 0;
-}
-.lSAction > a {
-  border-radius: 50%;
-  backdrop-filter: blur(5px);
-}
 
 .more__gallery {
   scroll-snap-type: x mandatory;
@@ -155,48 +220,58 @@ header {
 .more__gallery-cell {
   width: 270px;
   height: 270px;
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
 }
 .gallery-cell1 {
   background: url(/img/portfolio/links/01.avif) no-repeat center center;
   background-size: cover;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
 }
 .gallery-cell2 {
   background: url(/img/portfolio/links/02.avif) no-repeat center center;
   background-size: cover;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
 }
 .gallery-cell3 {
   background: url(/img/portfolio/links/03.avif) no-repeat center center;
   background-size: cover;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
 }
 .gallery-cell4 {
   background: url(/img/portfolio/links/04.avif) no-repeat center center;
   background-size: cover;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
 }
 .gallery-cell5 {
   background: url(/img/portfolio/links/05.avif) no-repeat center center;
   background-size: cover;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
 }
 .gallery-cell6 {
   background: url(/img/portfolio/links/06.avif) no-repeat center center;
   background-size: cover;
+  scroll-snap-align: end;
+  scroll-snap-stop: always;
 }
-#slideLeft {
+#moreLeft {
   position: relative;
   left: 30px;
   top: -140px;
 }
-#slideRight {
+#moreRight {
   position: relative;
   right: 30px;
   top: -140px;
 }
-.buttons {
+.more__buttons {
   display: flex;
   justify-content: space-between;
 }
-.buttons button {
+.more__buttons button {
   content: '';
   border-radius: 50%;
   border: 1px solid var(--main-color);
@@ -207,13 +282,13 @@ header {
   opacity: 0.5;
   transition: 0.3s all ease;
 }
-.buttons button:hover {
+.more__buttons button:hover {
   cursor: pointer;
   background: rgba(255, 255, 255, 0.815);
   opacity: 1;
   transition: 0.3s all ease;
 }
-#slideLeft::before {
+#moreLeft::before {
   content: '';
   position: absolute;
   left: 16px;
@@ -225,7 +300,7 @@ header {
   -webkit-transform: rotate(-135deg);
   transform: rotate(-135deg);
 }
-#slideRight::before {
+#moreRight::before {
   content: '';
   position: absolute;
   left: 12px;

@@ -12,7 +12,6 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&family=Roboto:wght@300;400&display=swap"
         rel="stylesheet" media="screen and (color)">
-    <link rel='stylesheet' href='https://sachinchoolur.github.io/lightslider/dist/css/lightslider.css'>
     <link rel="stylesheet" href="./photoswipe/photoswipe.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/header.css">
@@ -121,29 +120,26 @@
                     </div>
                 </div>
             </div>
-            <div class="content">
-                <div class="demo">
-                    <ul id="lightSlider">
-                        <li data-thumb="./img/portfolio/loft/01.avif">
-                            <img class="slider-img" src="./img/portfolio/loft/01.avif" />
-                        </li>
-
-                        <li data-thumb="./img/portfolio/loft/loft-back.avif">
-                            <img class="slider-img" src="./img/portfolio/loft/loft-back.avif" />
-                        </li>
-                        <li data-thumb="./img/portfolio/loft/04.avif">
-                            <img class="slider-img" src="./img/portfolio/loft/04.avif" />
-                        </li>
-                        <li data-thumb="./img/portfolio/loft/05.avif">
-                            <img class="slider-img" src="./img/portfolio/loft/05.avif" />
-                        </li>
-                        <li data-thumb="./img/portfolio/loft/06.avif">
-                            <img class="slider-img" src="./img/portfolio/loft/06.avif" />
-                        </li>
-                    </ul>
+        </div>
+        <div class="content">
+            <div class="slider-gallery" id="sliderGallery">
+                <div class="slider-cell slider-img1">
+                </div>
+                <div class="slider-cell slider-img2">
+                </div>
+                <div class="slider-cell slider-img3">
+                </div>
+                <div class="slider-cell slider-img4">
+                </div>
+                <div class="slider-cell slider-img5">
                 </div>
             </div>
+            <div class="slider__buttons">
+                <button class="slider-button" id="slideLeft" type="button"></button>
+                <button class="slider-button" id="slideRight" type="button"></button>
+            </div>
         </div>
+
         <div class="content">
             <div class="design-additionally">
                 <div class="design-additionally__tittle">
@@ -230,38 +226,32 @@
             <div class="more__gallery" id="moreGallery">
                 <a href="">
                     <div class="more__gallery-cell gallery-cell1">
-
                     </div>
                 </a>
                 <a href="">
                     <div class="more__gallery-cell gallery-cell2">
-
                     </div>
                 </a>
                 <a href="">
                     <div class="more__gallery-cell gallery-cell3">
-
                     </div>
                 </a>
                 <a href="">
                     <div class="more__gallery-cell gallery-cell4">
-
                     </div>
                 </a>
                 <a href="">
                     <div class="more__gallery-cell gallery-cell5">
-
                     </div>
                 </a>
                 <a href="">
                     <div class="more__gallery-cell gallery-cell6">
-
                     </div>
                 </a>
             </div>
-            <div class="buttons">
-                <button id="slideLeft" type="button"></button>
-                <button id="slideRight" type="button"></button>
+            <div class="more__buttons">
+                <button id="moreLeft" type="button"></button>
+                <button id="moreRight" type="button"></button>
             </div>
         </div>
         </div>
@@ -373,7 +363,6 @@
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src='https://sachinchoolur.github.io/lightslider/dist/js/lightslider.js'></script>
     <script src="./js/script.js"></script>
     <script>
         // скрипт для вставки шапки и подвала на страницу
