@@ -76,5 +76,10 @@ $('#lightSlider').lightSlider({
   thumbItem: 0,
   useCSS: true,
   autoWidth: false,
+  speed: 2000,
+  pause: 4000,
+  auto: true,
+  verticalHeight: 500,
+   enableDrag:false,
   // adaptiveHeight:true,
 });

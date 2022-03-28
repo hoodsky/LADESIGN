@@ -679,7 +679,7 @@ sup {
   justify-content: space-between;
   margin-bottom: 40px;
 }
-.modal__form span {
+.modal__form label {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;

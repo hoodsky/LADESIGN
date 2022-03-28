@@ -13,6 +13,7 @@
         href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&family=Roboto:wght@300;400&display=swap"
         rel="stylesheet" media="screen and (color)">
     <link rel='stylesheet' href='https://sachinchoolur.github.io/lightslider/dist/css/lightslider.css'>
+    <link rel="stylesheet" href="./photoswipe/photoswipe.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/footer.css">
@@ -126,11 +127,9 @@
                         <li data-thumb="./img/portfolio/loft/01.avif">
                             <img class="slider-img" src="./img/portfolio/loft/01.avif" />
                         </li>
-                        <li data-thumb="./img/portfolio/loft/02.avif">
-                            <img class="slider-img" src="./img/portfolio/loft/02.avif" />
-                        </li>
-                        <li data-thumb="./img/portfolio/loft/03.avif">
-                            <img class="slider-img" src="./img/portfolio/loft/03.avif" />
+
+                        <li data-thumb="./img/portfolio/loft/loft-back.avif">
+                            <img class="slider-img" src="./img/portfolio/loft/loft-back.avif" />
                         </li>
                         <li data-thumb="./img/portfolio/loft/04.avif">
                             <img class="slider-img" src="./img/portfolio/loft/04.avif" />
@@ -201,11 +200,24 @@
                         </p>
                     </div>
                 </div>
-                <div class="proj-features__gallery">
-                    <div class="gallery-cell"></div>
-                    <div class="gallery-cell"></div>
-                    <div class="gallery-cell"></div>
-                    <div class="gallery-cell"></div>
+                <div class="proj-features__gallery" id="gallery">
+                    <a data-pswp-width="1916" data-pswp-height="1071" target="_blank" class="gallery-link"
+                        href="./img/portfolio/loft/gallery1.avif">
+                        <img class="gallery-thumb" src="./img/portfolio/loft/gallery1_thumb.avif" alt="">
+                    </a>
+                    <a data-pswp-width="813" data-pswp-height="816" target="_blank" class="gallery-link"
+                        href="./img/portfolio/loft/gallery2.avif">
+                        <img class="gallery-thumb" src="./img/portfolio/loft/gallery2_thumb.avif" alt="">
+                    </a>
+                    <a data-pswp-width="1035" data-pswp-height="773" target="_blank" class="gallery-link"
+                        href="./img/portfolio/loft/gallery3.avif">
+                        <img class="gallery-thumb" src="./img/portfolio/loft/gallery3_thumb.avif" alt="">
+                    </a>
+                    <a data-pswp-width="1091" data-pswp-height="821" target="_blank" class="gallery-link"
+                        href="./img/portfolio/loft/gallery4.avif">
+                        <img class="gallery-thumb" src="./img/portfolio/loft/gallery4_thumb.avif" alt="">
+                    </a>
+
                 </div>
             </div>
         </div>
@@ -247,11 +259,11 @@
                         <div class="modal__form">
                             <div class="modal__form-name">
                                 <input id="name" type="text" onkeyup='checkParams()' required>
-                                <span class="floating-label">Ваше имя</span>
+                                <label for="name" class="floating-label">Ваше имя</label>
                             </div>
                             <div class="modal__form-tel">
                                 <input id="phone" type="number" onkeyup='checkParams()' required>
-                                <span class="floating-label">Ваш телефон</span>
+                                <label for="phone" class="floating-label">Ваш телефон</label>
                             </div>
                         </div>
                         <div class="modal__links">
@@ -348,7 +360,16 @@
             }
         });
     </script>
-
+    <script type="module">
+        import PhotoSwipeLightbox from '/photoswipe/photoswipe-lightbox.esm.js';
+        const options = {
+            gallery: '#gallery',
+            children: 'a',
+            pswpModule: () => import('/photoswipe/photoswipe.esm.js')
+        };
+        const lightbox = new PhotoSwipeLightbox(options);
+        lightbox.init();
+    </script>
 
 </body>
 
