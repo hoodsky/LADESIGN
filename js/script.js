@@ -69,10 +69,10 @@ function checkParams() {
 // Закрытие навбара при нажатии на ссылку
 
 $('#lightSlider').lightSlider({
-    gallery: false,
-    item: 1,
-    loop:true,
-    slideMargin: 10,
+  gallery: false,
+  item: 1,
+  loop:true,
+  slideMargin: 10,
   thumbItem: 0,
   useCSS: true,
   autoWidth: false,
@@ -80,6 +80,16 @@ $('#lightSlider').lightSlider({
   pause: 4000,
   auto: true,
   verticalHeight: 500,
-   enableDrag:false,
+  enableDrag:false,
   // adaptiveHeight:true,
 });
+
+   const buttonRight = document.getElementById('slideRight');
+    const buttonLeft = document.getElementById('slideLeft');
+
+    buttonRight.onclick = function () {
+      document.getElementById('moreGallery').scrollLeft += 200;
+    };
+    buttonLeft.onclick = function () {
+      document.getElementById('moreGallery').scrollLeft -= 200;
+    };

@@ -23,6 +23,7 @@ body {
   display: grid;
   grid-template-rows: auto 1fr auto;
   min-height: 100%;
+  color: var(--main-color);
   /* конец прижатия */
 }
 h1 {
@@ -237,7 +238,7 @@ input[type='number'] {
   bottom: 40px;
   width: 30px;
   height: 30px;
-  background-color: var(--white);
+  background-color: rgba(255, 255, 255, 0.308);
   border: none;
   border: 1px solid #d5d5d5;
   box-sizing: border-box;
@@ -418,6 +419,7 @@ sup {
   opacity: 1;
   transition: all 0.5s ease;
 }
+
 .gallery-div h4 {
   margin-bottom: 10px;
 }
