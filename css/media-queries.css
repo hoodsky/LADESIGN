@@ -410,4 +410,38 @@
   .arrow {
     top: 0;
   }
+  .slider-cell,
+  .slider-gallery {
+    height: 300px;
+  }
+  .design-section__tittle {
+    max-width: 100%;
+  }
+  .design-additionally__content {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+  #slideLeft,
+  #slideRight {
+    top: -150px;
+  }
+  .design-photo {
+    height: 250px;
+  }
+  .proj-features__content {
+    flex-direction: column;
+  }
+  .proj-features__gallery {
+    display: flex;
+    flex-direction: column;
+  }
+  .proj-features {
+    margin-bottom: 70px;
+  }
+  .request-btn {
+    margin: 70px 0;
+  }
+  .design-additionally__tittle {
+    width: 100%;
+  }
 }
