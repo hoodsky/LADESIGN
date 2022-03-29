@@ -67,12 +67,13 @@ window.onload = function () {
     const buttonLeft = document.getElementById('moreLeft');
 
     buttonRight.onclick = function () {
-      document.getElementById('moreGallery').scrollLeft += 200;
+      document.getElementById('moreLinks').scrollLeft += 200;
     };
     buttonLeft.onclick = function () {
-      document.getElementById('moreGallery').scrollLeft -= 200;
+      document.getElementById('moreLinks').scrollLeft -= 200;
 };
-    
+
+
 // прокрутка слайдера на странице работы
         const scroller = document.querySelector('.slider-gallery');
         const nextBtn = document.querySelector('.slideRight');
