@@ -1,0 +1,266 @@
+.prices-link {
+  pointer-events: none;
+}
+
+.header-top__menu .prices-link {
+  color: black;
+  border-bottom: solid 1px black;
+}
+
+header {
+  background: none;
+  height: auto;
+}
+.header-bottom {
+  display: none;
+}
+.header__content {
+  height: auto;
+}
+.first-page__link {
+  display: none;
+}
+.header-arrow {
+  display: none;
+}
+.header-fixed {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px 0;
+  border-bottom: 1px solid var(--light-bg);
+}
+.header-logo_white {
+  display: none;
+}
+.header-logo_dark {
+  display: block;
+}
+.header-top__tel a,
+.header-top__menu a {
+  color: var(--body-text);
+}
+.header-top__menu a:hover {
+  border-bottom: solid 1px var(--body-text);
+}
+.header-top__tel a svg {
+  fill: rgba(255, 255, 255, 0);
+  stroke: var(--body-text);
+}
+.header-top__tel a:hover svg {
+  fill: var(--body-text);
+  transition: all 0.5s ease;
+}
+.hamburger-lines,
+.checkbox {
+  top: 30px;
+}
+.navbar .hamburger-lines .line {
+  background: black;
+}
+.services-prices {
+  margin-top: 205px;
+}
+.services-prices__tittle {
+  display: flex;
+  justify-content: center;
+}
+.services-prices__table {
+  margin: 100px 0 150px 0;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 5fr 7fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: '. .';
+}
+.services-prices__table-tittle {
+  width: 80%;
+}
+.services-prices__table-content {
+}
+.services-prices__table-content div {
+  border-bottom: 1px solid var(--light-bg);
+  padding: 25px 0;
+}
+.services-prices__table-content div h4 {
+  margin-bottom: 12px;
+}
+.prices {
+}
+.prices__tittle h3 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.prices__projects {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  column-gap: 30px;
+}
+.prices__projects-card {
+  border: 1px solid var(--light-bg);
+  height: 200px;
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+.projects-card__tittle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0;
+}
+.recomend-card {
+  border: 2px solid var(--button);
+}
+
+.recomend-card span {
+  position: absolute;
+  margin-top: -8px;
+  background-color: white;
+  padding: 0 10px;
+  color: var(--button);
+}
+.project-name {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 35px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.project-price {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 29px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-input);
+}
+.project-btn {
+  display: block;
+  text-decoration: none;
+  background-color: white;
+  color: var(--button);
+  width: 100%;
+  text-align: center;
+  padding: 22px 0;
+  border: 1px solid var(--button);
+  transition: 0.3s all ease;
+}
+.project-btn:hover {
+  background-color: var(--button);
+  color: white;
+  transition: 0.3s all ease;
+}
+.project-card__hiden {
+  overflow: hidden;
+  display: none;
+  width: 100%;
+  align-items: flex-start;
+  transition: all 0.5s ease;
+}
+.project-card__hiden ul {
+  display: flex;
+  padding: 30px;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 15px;
+}
+.project-card__hiden ul li {
+  display: block;
+}
+.openhide-text {
+  width: 200px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 250px;
+  text-align: center;
+  transition: all 0.5s ease;
+}
+#openHide {
+  opacity: 0;
+  height: 20px;
+  width: 200px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 250px;
+  text-align: center;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  z-index: 3;
+}
+#openHide:checked ~ .openhide-text,
+#openHide:checked {
+  margin-top: 620px;
+  transition: all 0.5s ease;
+}
+#openHide:checked ~ .prices__projects-card .project-card__hiden {
+  display: flex;
+  transition: all 0.5s ease;
+}
+#openHide:checked ~ .prices__projects-card {
+  height: 570px;
+  transition: all 0.5s ease;
+}
+.openhide-text {
+  text-align: center;
+}
+.arrow-down.icon {
+  color: var(--main-color);
+  position: absolute;
+  background-color: var(--main-color);
+  margin-left: 15px;
+  margin-top: 0;
+  width: 1px;
+  height: 22px;
+}
+#openHide:checked ~ .openhide-text > .arrow-circle {
+  transform: rotate(-180deg);
+  transition: all 0.5s ease;
+}
+.arrow-down.icon:before {
+  content: '';
+  position: absolute;
+  left: -5px;
+  top: 10px;
+  width: 10px;
+  height: 10px;
+  border-top: solid 1px var(--main-color);
+  border-right: solid 1px var(--main-color);
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+.arrow-circle {
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--main-color);
+  border-radius: 50%;
+  position: absolute;
+  margin-left: 164px;
+  margin-top: -25px;
+  transition: all 0.5s ease;
+}
+.openhide-text h5:last-of-type {
+  display: none;
+}
+#openHide:checked ~ .openhide-text > h5:last-of-type {
+  display: block;
+}
+#openHide:checked ~ .openhide-text > h5:first-child {
+  display: none;
+}
+#openHide:hover ~ .openhide-text {
+  color: var(--button);
+}

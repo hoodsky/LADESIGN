@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Портфолио</title>
+    <title>Услуги и цены</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/footer.css">
-    <link rel="stylesheet" href="./css/portfolio.css">
+    <link rel="stylesheet" href="./css/prices.css">
     <link rel="stylesheet" media="screen and (color)" href="./css/media-queries.css">
 </head>
 
@@ -64,154 +64,140 @@
     <!-- шапка конец -->
 
     <main>
-        <div id="potfolio" class="portfolio">
-            <div class="content">
-                <div class="portfolio__tittle">
-                    <h2>Портфолио</h2>
+        <div class="content">
+            <div class="services-prices">
+                <div class="services-prices__tittle">
+                    <h2>услуги и цены</h2>
                 </div>
-                <div class="portfolio__div">
-                    <div class="portfolio__nav">
-                        <span>
-                            <a href="">
-                                <h5>все работы<sup>29</sup> </h5>
-                            </a>
-                        </span>
-                        <span>
-                            <a href="">
-                                <h5>квартиры<sup>18</sup> </h5>
-                            </a>
-                        </span>
-                        <span>
-                            <a href="">
-                                <h5>дома<sup>18</sup> </h5>
-                            </a>
-                        </span>
-                        <span>
-                            <a href="">
-                                <h5>коммерческие помещения<sup>12</sup> </h5>
-                            </a>
-                        </span>
+                <div class="services-prices__table">
+                    <div class="services-prices__table-tittle">
+                        <h3>Зачем вам нужен дизайн-проект</h3>
+                    </div>
+                    <div class="services-prices__table-content">
+                        <div>
+                            <h4>Чтобы ничего не упустить</h4>
+                            <p>Качественный дизайн-проект поможет избежать ошибок и переделок, которые приводят к лишним
+                                тратам и затягивают сроки
+                                ремонта</p>
+                        </div>
+                        <div>
+                            <h4>Получить нужный результат</h4>
+                            <p>С помощью профессионалов вы сможете донести до строителей свое видение будущего дизайна
+                                интерьера</p>
+                        </div>
+                        <div>
+                            <h4>Создать комфорт</h4>
+                            <p>Грамотная планировка и продуманная расстановка мебели сделает пространство эргономичным
+                                и функциональным</p>
+                        </div>
+                        <div>
+                            <h4>Сэкономить деньги</h4>
+                            <p>Дизайнер подберет и рассчитает нужное количество материалов с учетом площади помещения,
+                                что поможет избежать перерасхода</p>
+                        </div>
+                        <div>
+                            <h4>Потратить время на что-то более приятное</h4>
+                            <p>Вам не придется ездить по магазинам, месяцами подбирать и продумывать подходящие
+                                дизайнерские решения в интернете.
+                                Не нужно постоянно ездить на объект и созваниваться с рабочими, пытаться самостоятельно
+                                узаконить новые планировочные
+                                решения. Студия дизайна интерьера LА Design сделает все это за вас!</p>
+                        </div>
                     </div>
                 </div>
+            </div>
+            <div class="prices">
+                <div class="prices__tittle">
+                    <h3>СТОИМОСТЬ РАЗРАБОТКИ <br> ДИЗАЙН-ПРОЕКТА</h3>
+                </div>
+                <div class="prices__projects">
+                    <input type="checkbox" id="openHide">
+                    <div class="openhide-text">
+                        <h5>развернуть</h5>
+                        <h5>свернуть</h5>
+                        <div class="arrow-circle">
+                            <div class="arrow-down icon"></div>
+                        </div>
+                    </div>
+                    <div class="prices__projects-card">
+                        <div class="projects-card__tittle">
+                            <div class="project-name">basic</div>
+                            <div class="project-price">от 2500 $</div>
+                        </div>
+                        <div class="project-card__hiden">
+                            <ul>
+                                <li>Обмерочный план</li>
+                                <li>План расстановки мебели</li>
+                                <li>План демонтажный</li>
+                                <li>План монтажный</li>
+                                <li>План полов с материалами</li>
+                                <li>-</li>
+                                <li>-</li>
+                                <li>-</li>
+                                <li>-</li>
+                            </ul>
+                        </div>
+                        <a class="project-btn" href="">
+                            <h5>Заказать</h5>
+                        </a>
+                    </div>
+                    <div class="prices__projects-card recomend-card">
+                        <span>
+                            <h5>recommend</h5>
+                        </span>
+                        <div class="projects-card__tittle">
+                            <div class="project-name">pro</div>
+                            <div class="project-price">от 3500 $</div>
+                        </div>
+                        <div class="project-card__hiden">
+                            <ul>
+                                <li>Обмерочный план</li>
+                                <li>План расстановки мебели</li>
+                                <li>План демонтажный</li>
+                                <li>План монтажный</li>
+                                <li>План полов с материалами</li>
+                                <li>План экспликации</li>
+                                <li>-</li>
+                                <li>-</li>
+                                <li>-</li>
+                            </ul>
+                        </div>
+                        <a class="project-btn" href="">
+                            <h5>Заказать</h5>
+                        </a>
+                    </div>
+                    <div class="prices__projects-card">
+                        <div class="projects-card__tittle">
+                            <div class="project-name">exclusive</div>
+                            <div class="project-price">от 5000 $</div>
+                        </div>
+                        <div class="project-card__hiden">
+                            <ul>
+                                <li>Обмерочный план</li>
+                                <li>План расстановки мебели</li>
+                                <li>План демонтажный</li>
+                                <li>План монтажный</li>
+                                <li>-</li>
+                                <li>План экспликации</li>
+                                <li>Чертежи сложных элементов и мебели (если заказывать отдельно - расчет
+                                    индивидуальный)</li>
+                                <li>Спецификация осветительного оборудования</li>
+                                <li>Декорирование</li>
+                            </ul>
+                        </div>
+                        <a class="project-btn" href="">
+                            <h5>Заказать</h5>
+                        </a>
+                    </div>
 
-                <!-- портфолио галерея -->
-
-                <div class="portfolio__gallery">
-                    <a class="gallery-div div01" href="./loft.html">
-                        <div>
-                            <h4>loft</h4>
-                            <h6>Unique collection</h6>
-                        </div>
-                    </a>
-                    <a href="" class="gallery-div div02">
-                        <div>
-                            <h4>Название в две <br>строки</h4>
-                            <h6>Unique collection</h6>
-                        </div>
-                    </a>
-                    <a href="" class="gallery-div div03">
-                        <div>
-                            <h4>Название в две <br>строки</h4>
-                            <h6>Unique collection</h6>
-                        </div>
-                    </a>
-                    <a href="" class="gallery-div div04">
-                        <div>
-                            <h4>Название в две <br>строки</h4>
-                            <h6>Unique collection</h6>
-                        </div>
-                    </a>
-                    <a href="" class="gallery-div div05">
-                        <div>
-                            <h4>Lorem ipsum dolor sit amet.</h4>
-                            <h6>Unique collection</h6>
-                        </div>
-                    </a>
-                    <a href="" class="gallery-div div06">
-                        <div>
-                            <h4>Lorem, ipsum dolor.</h4>
-                            <h6>Lorem, ipsum.</h6>
-                        </div>
-                    </a>
-                    <a href="" class="gallery-div div07">
-                        <div>
-                            <h4>Lorem, ipsum dolor.</h4>
-                            <h6>Lorem, ipsum.</h6>
-                        </div>
-                    </a>
-                    <a href="" class="gallery-div div08">
-                        <div>
-                            <h4>Lorem, ipsum dolor.</h4>
-                            <h6>Lorem, ipsum.</h6>
-                        </div>
-                    </a>
-                    <a href="" class="gallery-div div09">
-                        <div>
-                            <h4>Lorem, ipsum dolor.</h4>
-                            <h6>Lorem, ipsum.</h6>
-                        </div>
-                    </a>
-                    <a href="" class="gallery-div div10">
-                        <div>
-                            <h4>Lorem, ipsum dolor.</h4>
-                            <h6>Lorem, ipsum.</h6>
-                        </div>
-                    </a>
-                    <a href="" class="gallery-div div11">
-                        <div>
-                            <h4>Lorem, ipsum dolor.</h4>
-                            <h6>Lorem, ipsum.</h6>
-                        </div>
-                    </a>
-                    <a href="" class="gallery-div div12">
-                        <div>
-                            <h4>Lorem, ipsum dolor.</h4>
-                            <h6>Lorem, ipsum.</h6>
-                        </div>
-                    </a>
-                    <a href="" class="gallery-div div13">
-                        <div>
-                            <h4>Lorem, ipsum dolor.</h4>
-                            <h6>Lorem, ipsum.</h6>
-                        </div>
-                    </a>
-                    <a href="" class="gallery-div div14">
-                        <div>
-                            <h4>Lorem, ipsum dolor.</h4>
-                            <h6>Lorem, ipsum.</h6>
-                        </div>
-                    </a>
-                    <a href="" class="gallery-div div15">
-                        <div>
-                            <h4>Lorem, ipsum dolor.</h4>
-                            <h6>Lorem, ipsum.</h6>
-                        </div>
-                    </a>
-                    <a href="" class="gallery-div div16">
-                        <div>
-                            <h4>Lorem, ipsum dolor.</h4>
-                            <h6>Lorem, ipsum.</h6>
-                        </div>
-                    </a>
-                    <a href="" class="gallery-div div17">
-                        <div>
-                            <h4>Lorem, ipsum dolor.</h4>
-                            <h6>Lorem, ipsum.</h6>
-                        </div>
-                    </a>
                 </div>
 
-                <div class="gallery-morebtn">
-                    <a class="morebtn-link" href="">
-                        <h5>показать еще работы</h5>
-                    </a>
-                </div>
-                <div class="request-btn">
-                    <a class="request-link" href="#openModal">
-                        <h2>оставить заявку на проект</h2>
-                        <div class="arrow"></div>
-                    </a>
-                </div>
+            </div>
+            <div class="request-btn">
+                <a class="request-link" href="#openModal">
+                    <h2>оставить заявку на проект</h2>
+                    <div class="arrow"></div>
+                </a>
             </div>
         </div>
         <!-- модальное окно с контактами начало  -->
@@ -293,6 +279,7 @@
             </div>
         </div>
         <!-- модальное окно с контактами конец  -->
+
     </main>
 
     <!-- кнопка для возврата на верх страницы -->
