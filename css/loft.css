@@ -1,5 +1,6 @@
 header {
-  background: url('../img/portfolio/loft/loft-back.avif') no-repeat center center;
+  background: url('../img/portfolio/loft/loft-back.avif') no-repeat center
+    center;
   position: relative;
   background-size: cover;
   background-attachment: fixed;
@@ -67,23 +68,24 @@ header {
   scroll-snap-stop: always;
 }
 .slider-img1 {
-  background: url(/img/portfolio/loft/01.avif) no-repeat center center;
+  background: url('../img/portfolio/loft/01.avif') no-repeat center center;
   background-size: cover;
 }
 .slider-img2 {
-  background: url(/img/portfolio/loft/loft-back.avif) no-repeat center center;
+  background: url('../img/portfolio/loft/loft-back.avif') no-repeat center
+    center;
   background-size: cover;
 }
 .slider-img3 {
-  background: url(/img/portfolio/loft/04.avif) no-repeat center center;
+  background: url('../img/portfolio/loft/04.avif') no-repeat center center;
   background-size: cover;
 }
 .slider-img4 {
-  background: url(/img/portfolio/loft/05.avif) no-repeat center center;
+  background: url('../img/portfolio/loft/05.avif') no-repeat center center;
   background-size: cover;
 }
 .slider-img5 {
-  background: url(/img/portfolio/loft/06.avif) no-repeat center center;
+  background: url('../img/portfolio/loft/06.avif') no-repeat center center;
   background-size: cover;
 }
 .more__buttons,
@@ -240,27 +242,27 @@ header {
   scroll-snap-stop: always;
 }
 .more-links__cell1 {
-  background: url(/img/portfolio/links/01.avif) no-repeat center center;
+  background: url('../img/portfolio/links/01.avif') no-repeat center center;
   background-size: cover;
 }
 .more-links__cell2 {
-  background: url(/img/portfolio/links/02.avif) no-repeat center center;
+  background: url('../img/portfolio/links/02.avif') no-repeat center center;
   background-size: cover;
 }
 .more-links__cell3 {
-  background: url(/img/portfolio/links/03.avif) no-repeat center center;
+  background: url('../img/portfolio/links/03.avif') no-repeat center center;
   background-size: cover;
 }
 .more-links__cell4 {
-  background: url(/img/portfolio/links/04.avif) no-repeat center center;
+  background: url('../img/portfolio/links/04.avif') no-repeat center center;
   background-size: cover;
 }
 .more-links__cell5 {
-  background: url(/img/portfolio/links/05.avif) no-repeat center center;
+  background: url('../img/portfolio/links/05.avif') no-repeat center center;
   background-size: cover;
 }
 .more-links__cell6 {
-  background: url(/img/portfolio/links/06.avif) no-repeat center center;
+  background: url('../img/portfolio/links/06.avif') no-repeat center center;
   background-size: cover;
 }
 #moreLeft {
