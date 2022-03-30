@@ -133,7 +133,7 @@
   .div04 {
     grid-column-start: 1;
     grid-column-end: 2;
-    background: url('/img/portfolio/links/04.avif') no-repeat center;
+    background: url('../img/portfolio/links/04.avif') no-repeat center;
     background-size: cover;
   }
   .div06 {
@@ -152,12 +152,12 @@
     grid-row-start: 7;
   }
   .div09 {
-    background: url('/img/portfolio/links/09.avif') no-repeat center;
+    background: url('../img/portfolio/links/09.avif') no-repeat center;
     background-size: cover;
     grid-row-start: 7;
   }
   .div10 {
-    background: url('/img/portfolio/links/10.avif') no-repeat center;
+    background: url('../img/portfolio/links/10.avif') no-repeat center;
     background-size: cover;
     grid-row-start: 8;
     grid-column-start: 1;
@@ -324,7 +324,7 @@
     grid-row-end: 6;
     grid-column-start: 1;
     grid-column-end: 1;
-    background: url('/img/portfolio/links/04.avif') no-repeat center;
+    background: url('../img/portfolio/links/04.avif') no-repeat center;
     background-size: cover;
   }
   .div05 {
