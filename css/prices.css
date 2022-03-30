@@ -8,6 +8,7 @@
 }
 
 header {
+  margin-bottom: 0;
   background: none;
   height: auto;
 }
@@ -57,7 +58,7 @@ header {
   background: black;
 }
 .services-prices {
-  margin-top: 205px;
+  margin-top: 150px;
 }
 .services-prices__tittle {
   display: flex;
@@ -98,7 +99,6 @@ header {
 .prices__projects-card {
   border: 1px solid var(--light-bg);
   height: 200px;
-  width: 33%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -184,6 +184,7 @@ header {
   margin-right: auto;
   margin-top: 250px;
   text-align: center;
+  text-align: center;
   transition: all 0.5s ease;
 }
 #openHide {
@@ -206,16 +207,13 @@ header {
   margin-top: 620px;
   transition: all 0.5s ease;
 }
-#openHide:checked ~ .prices__projects-card .project-card__hiden {
+#openHide:checked ~ div > .prices__projects-card .project-card__hiden {
   display: flex;
   transition: all 0.5s ease;
 }
-#openHide:checked ~ .prices__projects-card {
+#openHide:checked ~ div > .prices__projects-card {
   height: 570px;
   transition: all 0.5s ease;
-}
-.openhide-text {
-  text-align: center;
 }
 .arrow-down.icon {
   color: var(--main-color);
@@ -263,4 +261,68 @@ header {
 }
 #openHide:hover ~ .openhide-text {
   color: var(--button);
+}
+.more {
+  margin-top: 200px;
+}
+#openHideSmall {
+  opacity: 0;
+  display: none;
+  height: 60px;
+  width: 100%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  margin-top: 140px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  z-index: 3;
+}
+.openhide-small {
+  display: none;
+  /* display: flex; */
+  height: 60px;
+  width: calc(100% - 92px);
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  margin-top: 140px;
+  text-align: center;
+  border: 1px solid;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease;
+}
+.openhide-small h5:last-of-type {
+  display: none;
+}
+#openHideSmall:checked ~ .openhide-small,
+#openHideSmall:checked {
+  margin-top: 498px;
+  transition: all 0.5s ease;
+}
+#openHideSmall:checked ~ .openhide-small h5:last-of-type {
+  display: block;
+}
+#openHideSmall:checked ~ .openhide-small h5:first-of-type {
+  display: none;
+}
+#openHideSmall:checked ~ .prices__projects-card > .project-btn {
+  display: block;
+}
+#openHideSmall:checked ~ .prices__projects-card > .project-card__hiden {
+  display: block;
+}
+#openHideSmall:checked ~ .prices__projects-card {
+  height: 620px;
+}
+.openhide-small .arrow-circle {
+  margin-top: 0;
+  transition: all 0.5s ease;
+}
+#openHideSmall:checked ~ .openhide-small .arrow-circle {
+  transform: rotate(-180deg);
+  transition: all 0.5s ease;
 }

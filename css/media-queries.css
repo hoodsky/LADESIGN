@@ -219,6 +219,40 @@
     height: 500px;
     background-attachment: local;
   }
+  .services-prices__table {
+    display: flex;
+    flex-direction: column;
+  }
+  .prices__projects {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+  .prices__projects-card {
+    width: auto;
+  }
+  #openHide {
+    display: none;
+  }
+  .openhide-text {
+    display: none;
+  }
+  .project-btn {
+    display: none;
+    background-color: var(--button);
+    color: white;
+  }
+  #openHideSmall {
+    display: block;
+  }
+  .openhide-small {
+    display: flex;
+  }
+  .services-prices__table {
+    margin: 70px 0;
+  }
+  .more {
+    margin-top: 70px;
+  }
 }
 @media (max-width: 700px) {
   h1 {
@@ -439,9 +473,22 @@
     margin-bottom: 70px;
   }
   .request-btn {
-    margin: 70px 0;
+    margin: 30px 0 70px 0;
   }
   .design-additionally__tittle {
     width: 100%;
+  }
+  .openhide-small {
+    width: calc(100% - 32px);
+  }
+  #openHideSmall:checked ~ .prices__projects-card {
+    height: 660px;
+  }
+  #openHideSmall:checked ~ .openhide-small,
+  #openHideSmall:checked {
+    margin-top: 538px;
+  }
+  .services-prices__table {
+    margin: 50px 0 70px 0;
   }
 }
