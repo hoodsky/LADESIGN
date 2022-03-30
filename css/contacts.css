@@ -1,0 +1,164 @@
+.contacts-link {
+  pointer-events: none;
+}
+
+.header-top__menu .contacts-link {
+  color: black;
+  border-bottom: solid 1px black;
+}
+header {
+  background: none;
+  height: auto;
+}
+.header-bottom {
+  display: none;
+}
+.header__content {
+  height: auto;
+}
+.first-page__link {
+  display: none;
+}
+.header-arrow {
+  display: none;
+}
+.header-fixed {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px 0;
+  border-bottom: 1px solid var(--light-bg);
+}
+.header-logo_white {
+  display: none;
+}
+.header-logo_dark {
+  display: block;
+}
+.header-top__tel a,
+.header-top__menu a {
+  color: var(--body-text);
+}
+.header-top__menu a:hover {
+  border-bottom: solid 1px var(--body-text);
+}
+.header-top__tel a svg {
+  fill: rgba(255, 255, 255, 0);
+  stroke: var(--body-text);
+}
+.header-top__tel a:hover svg {
+  fill: var(--body-text);
+  transition: all 0.5s ease;
+}
+.hamburger-lines,
+.checkbox {
+  top: 30px;
+}
+.navbar .hamburger-lines .line {
+  background: black;
+}
+.contacts__tittle {
+  margin: 205px 0 100px 0;
+  text-align: center;
+}
+.contacts__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 205px;
+  margin-bottom: 100px;
+}
+h3 {
+  margin-bottom: 30px;
+}
+h6 {
+  margin: 30px 0;
+}
+input {
+  width: 100%;
+  border: none;
+  height: 30px;
+  border-bottom: 1px solid var(--light-bg);
+  margin: 0 0 30px 0;
+  transition: all 0.3s ease;
+}
+input#file {
+  width: 0;
+  border: none;
+  color: transparent;
+}
+
+::-webkit-file-upload-button {
+  visibility: hidden;
+}
+label span {
+  position: absolute;
+  margin-top: -50px;
+
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+input:focus ~ span,
+input:not(:focus):valid ~ span {
+  margin-top: -80px;
+  font-size: 13px;
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+input:focus {
+  border-bottom: 2px solid var(--button);
+  transition: all 0.3s ease;
+  margin-bottom: 29px;
+}
+.button__submit button {
+  padding: 22px 57px;
+  border-radius: 0;
+  border: 1px solid var(--button);
+  background-color: var(--button);
+  color: rgba(255, 255, 255, 0.651);
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  cursor: pointer;
+  opacity: 0.9;
+  transition: 0.3s all ease;
+}
+.button__submit button:hover {
+  color: white;
+  border: 1px solid var(--button);
+  opacity: 1;
+  transition: 0.3s all ease;
+}
+.button__submit {
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+  line-height: 24px;
+}
+
+.contacts__form {
+}
+.contacts__info div {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+.contacts__info h3 {
+  margin-bottom: 30;
+}
+.contacts__info div div {
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+}
+.contacts__tel a {
+  text-decoration: none;
+  color: var(--body-text);
+}
+.contacts__email a {
+  color: var(--body-text);
+}
+.contacts__adress {
+  line-height: 24px;
+}

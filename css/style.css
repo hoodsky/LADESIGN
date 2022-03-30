@@ -8,6 +8,9 @@
   --button: #393246;
   --white: #ffffff;
 }
+input {
+  outline: none;
+}
 * {
   -webkit-tap-highlight-color: transparent;
 }

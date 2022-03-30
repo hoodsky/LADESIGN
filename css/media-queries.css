@@ -35,6 +35,10 @@
   .design-additionally__tittle {
     width: 85%;
   }
+  .contacts__content {
+    grid-template-columns: 7fr 4fr;
+    gap: 120px;
+  }
 }
 @media (max-width: 800px) {
   .header-top__menu a h5 {
@@ -252,6 +256,21 @@
   }
   .more {
     margin-top: 70px;
+  }
+  .contacts__content {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+  }
+  .contacts__info div {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 25px 70px;
+  }
+  .contacts__tittle {
+    margin: 175px 0 70px 0;
   }
 }
 @media (max-width: 700px) {
@@ -490,5 +509,18 @@
   }
   .services-prices__table {
     margin: 50px 0 70px 0;
+  }
+  .button__submit {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .button__submit button {
+    width: 100%;
+  }
+  .contacts__info div {
+    display: flex;
+  }
+  .contacts__tittle {
+    margin: 155px 0 50px 0;
   }
 }
