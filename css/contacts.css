@@ -10,6 +10,9 @@ header {
   background: none;
   height: auto;
 }
+.header-top__tel h6 {
+  margin: 0;
+}
 .header-bottom {
   display: none;
 }
